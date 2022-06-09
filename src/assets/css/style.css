@@ -151,8 +151,6 @@ body {
           box-shadow: 5px 5px 0px black;
   -webkit-transform: rotateZ(-8deg) translateX(-20px);
           transform: rotateZ(-8deg) translateX(-20px);
-  -webkit-animation: moving 7s infinite alternate;
-          animation: moving 7s infinite alternate;
 }
 
 .container .body .side {
@@ -199,6 +197,8 @@ body {
   background-color: #ffffff;
   color: black;
   border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 0px black;
+          box-shadow: 5px 5px 0px black;
 }
 
 .container .body .side .news .first h3 {
@@ -213,6 +213,8 @@ body {
   background-color: #ffffff;
   color: black;
   border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 0px black;
+          box-shadow: 5px 5px 0px black;
 }
 
 .container .body .side .news .second h3 {

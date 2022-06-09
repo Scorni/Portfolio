@@ -107,7 +107,7 @@ body{
                 text-decoration: none;
                 box-shadow: 5px 5px 0px rgb(0, 0, 0);
                 transform: rotateZ(-8deg) translateX(-20px);
-                @include key_frame("moving");
+                // @include key_frame("moving");
 
                 
             }
@@ -144,6 +144,7 @@ body{
                     background-color: #ffffff;
                     color: black;
                     border-radius: 5px;
+                    box-shadow: 5px 5px 0px rgb(0, 0, 0);
                 }
                 .second{
                     margin: 5%;
@@ -156,6 +157,7 @@ body{
                     background-color: #ffffff;
                     color: black;
                     border-radius: 5px;
+                    box-shadow: 5px 5px 0px rgb(0, 0, 0);
                 }
             }
         }
