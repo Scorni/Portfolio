@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt&display=swap");
 * {
   margin-top: 0;
 }
@@ -12,27 +13,47 @@ body {
   height: 100vh;
 }
 
+/*
+*   Responsive & static RN
+*/
 .container {
   margin: 0 auto;
   text-align: center;
 }
 
 .container .header {
-  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.container .header .siteName h1 {
+.container .header .siteName p {
+  padding-top: 10px;
+  font-size: 40px;
   margin: 0 auto;
-  padding: 15px;
-  width: 150px;
-  color: white;
-  background-color: black;
-  text-decoration: underline;
+  background-color: #ffffff;
+  border-bottom: #000000 3px solid;
+  color: black;
   font-family: 'Bebas Neue', cursive;
 }
 
 .container .header .navbar {
-  margin-top: 2em;
+  padding-block: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container .header .navbar .navlink {
@@ -40,29 +61,163 @@ body {
   text-decoration: none;
   font-family: 'Bebas Neue', cursive;
   font-size: 25px;
-  padding: 2%;
+  margin: 0.3em;
+  padding: 5px;
+  background-color: #FBC904;
+  border: black 3px solid;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 0px black;
+          box-shadow: 3px 3px 0px black;
+}
+
+.container .body {
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .body .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .container .body .main .welcomeText {
+  padding-block: 50px;
   text-align: center;
 }
 
 .container .body .main .welcomeText h1 {
-  margin-top: 2em;
   font-family: 'Bebas Neue', cursive;
   font-size: 50px;
   font-weight: lighter;
+  border: black 2px solid;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 5px 5px 0px black;
+          box-shadow: 5px 5px 0px black;
 }
 
 .container .body .main .book {
-  font-size: 150px;
+  display: none;
 }
 
-.container .body .main .checkButton {
-  margin: 2em auto;
+.container .body .checkButton {
+  padding-block: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.container .body .main .checkButton .arrow {
-  text-align: left;
+.container .body .checkButton .arrow {
+  -webkit-transform: rotateX(180deg) rotateZ(10deg);
+          transform: rotateX(180deg) rotateZ(10deg);
+}
+
+.container .body .checkButton .checkLink {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
+  font-weight: lighter;
+  border: black 4px solid;
+  background-color: #EBB0F6;
+  color: black;
+  border-radius: 5px;
+  text-decoration: none;
+  -webkit-box-shadow: 5px 5px 0px black;
+          box-shadow: 5px 5px 0px black;
+  -webkit-transform: rotateZ(-8deg) translateX(-20px);
+          transform: rotateZ(-8deg) translateX(-20px);
+  -webkit-animation: moving 7s infinite alternate;
+          animation: moving 7s infinite alternate;
+}
+
+.container .body .side {
+  padding-block: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .body .side .informations p {
+  margin: 5%;
+}
+
+.container .body .side .separator {
+  width: 100%;
+}
+
+.container .body .side .separator hr {
+  border: 0;
+  border: 1px solid #000000;
+  width: 100%;
+}
+
+.container .body .side .news {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .body .side .news .first {
+  margin: 5%;
+  border: black 4px solid;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 5px;
+}
+
+.container .body .side .news .first h3 {
+  border-bottom: black 4px solid;
+  background-color: #CEF4AE;
+  color: black;
+}
+
+.container .body .side .news .second {
+  margin: 5%;
+  border: black 4px solid;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 5px;
+}
+
+.container .body .side .news .second h3 {
+  border-bottom: black 4px solid;
+  background-color: #B7ECEC;
+  color: black;
 }
 /*# sourceMappingURL=style.css.map */

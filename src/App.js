@@ -1,5 +1,5 @@
 import './assets/css/style.css';
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Icon } from '@iconify/react';
 
 import Arrow from "./components/arrow";
@@ -9,13 +9,13 @@ function App() {
     <div className="container">
       <div className="header">
         <div className="siteName">
-          <h1>SCORNI</h1>
+          <p>MAXENCE SCORNICIEL</p>
         </div>
         <div className="navbar">
           <NavLink className="navlink" to="/">HOME</NavLink>
           <NavLink className="navlink" to="/about">ABOUT</NavLink>
           <NavLink className="navlink" to="/experiences">EXPERIENCES</NavLink>
-          <NavLink className="navlink" to="/hitme">HIT ME UP</NavLink>
+          <NavLink className="navlink" to="/hitme">HIT ME</NavLink>
         </div>
       </div>
       <div className="body">
@@ -26,15 +26,13 @@ function App() {
           <div className="book">
             <Icon className="icon" icon="akar-icons:book-open" />
           </div>
-          <div className="checkButton">
-            <Arrow className="arrow" />
-            <Link to="/experiences">
-              <button>
-                Check it out
-              </button>
-            </Link>
-          </div>
         </div>
+        <div className="checkButton">
+            <Arrow />
+            <NavLink className='checkLink' to="/experiences">
+                Check it out
+            </NavLink>
+          </div>
         <div className="side">
           <div className="informations">
             <p>
@@ -42,6 +40,9 @@ function App() {
               magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
               voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
             </p>
+          </div>
+          <div className="separator">
+            <hr />
           </div>
           <div className="news">
             <div className="first">
