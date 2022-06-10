@@ -11,6 +11,9 @@ body {
   background: #FFDCAB;
   font-size: 18px;
   height: 100vh;
+  background-size: cover;
+  background-image: url(../svg/background.svg);
+  background-attachment: fixed;
 }
 
 /*
@@ -70,12 +73,12 @@ body {
   border-radius: 5px;
   -webkit-box-shadow: 3px 3px 0px black;
           box-shadow: 3px 3px 0px black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .container .header .navbar .navlink:hover {
   background-color: #fba504;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   -webkit-box-shadow: 1px 1px 0px black;
           box-shadow: 1px 1px 0px black;
 }

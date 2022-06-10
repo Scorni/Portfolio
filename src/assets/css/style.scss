@@ -11,7 +11,9 @@ body{
     background: #FFDCAB;
     font-size: 18px;
     height: 100vh;
-    
+    background-size: cover;
+    background-image: url(../svg/background.svg);
+    background-attachment: fixed;
 }
 
 /*
@@ -54,9 +56,9 @@ body{
                 border: rgb(0, 0, 0) 3px solid;
                 border-radius: 5px;
                 box-shadow: 3px 3px 0px rgb(0, 0, 0);
+                transition: 0.3s;
                 &:hover{
                     background-color: #fba504;
-                    transition: 0.3s;
                     box-shadow: 1px 1px 0px rgb(0, 0, 0);
 
                 }
