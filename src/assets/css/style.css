@@ -45,7 +45,9 @@ body {
 }
 
 .container .header .navbar {
-  padding-block: 5%;
+  -webkit-animation: scale-up-center 0.4s;
+          animation: scale-up-center 0.4s;
+  padding-block: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,8 +72,16 @@ body {
           box-shadow: 3px 3px 0px black;
 }
 
+.container .header .navbar .navlink:hover {
+  background-color: #fba504;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 1px 1px 0px black;
+          box-shadow: 1px 1px 0px black;
+}
+
 .container .body {
-  padding: 5%;
+  padding-inline: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,17 +105,16 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.container .body .main .welcomeText {
-  padding-block: 50px;
-  text-align: center;
+  -webkit-animation: scale-up-center 0.4s;
+          animation: scale-up-center 0.4s;
 }
 
 .container .body .main .welcomeText h1 {
+  padding: 2%;
   font-family: 'Bebas Neue', cursive;
   font-size: 50px;
   font-weight: lighter;
+  text-align: center;
   border: black 2px solid;
   background-color: whitesmoke;
   -webkit-box-shadow: 5px 5px 0px black;
@@ -117,7 +126,7 @@ body {
 }
 
 .container .body .checkButton {
-  padding-block: 20px;
+  padding-block: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,16 +140,25 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-animation: scale-up-center 0.4s;
+          animation: scale-up-center 0.4s;
 }
 
 .container .body .checkButton .arrow {
-  -webkit-transform: rotateX(180deg) rotateZ(10deg);
-          transform: rotateX(180deg) rotateZ(10deg);
+  -webkit-transform: rotateX(180deg) rotateZ(10deg) translateX(-30px) translateY(30px);
+          transform: rotateX(180deg) rotateZ(10deg) translateX(-30px) translateY(30px);
+}
+
+.container .body .checkButton .arrow path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 5s linear infinite;
+          animation: dash 5s linear infinite;
 }
 
 .container .body .checkButton .checkLink {
   font-family: 'Bebas Neue', cursive;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: lighter;
   border: black 4px solid;
   background-color: #EBB0F6;
@@ -149,11 +167,16 @@ body {
   text-decoration: none;
   -webkit-box-shadow: 5px 5px 0px black;
           box-shadow: 5px 5px 0px black;
-  -webkit-transform: rotateZ(-8deg) translateX(-20px);
-          transform: rotateZ(-8deg) translateX(-20px);
+  -webkit-transform: rotateZ(-8deg) translateX(-50px);
+          transform: rotateZ(-8deg) translateX(-50px);
+  -webkit-animation: default_anim 3s linear infinite alternate;
+          animation: default_anim 3s linear infinite alternate;
+  padding-inline: 0px;
 }
 
 .container .body .side {
+  -webkit-animation: scale-up-center 0.4s;
+          animation: scale-up-center 0.4s;
   padding-block: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,6 +216,7 @@ body {
 
 .container .body .side .news .first {
   margin: 5%;
+  text-align: left;
   border: black 4px solid;
   background-color: #ffffff;
   color: black;
@@ -201,14 +225,29 @@ body {
           box-shadow: 5px 5px 0px black;
 }
 
-.container .body .side .news .first h3 {
+.container .body .side .news .first .newsTitle {
+  padding-inline: 5%;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 25px;
   border-bottom: black 4px solid;
   background-color: #CEF4AE;
   color: black;
 }
 
+.container .body .side .news .first .contentNews {
+  padding-inline: 5%;
+}
+
+.container .body .side .news .first .contentNews .subTitleNews {
+  text-align: left;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  color: black;
+}
+
 .container .body .side .news .second {
   margin: 5%;
+  text-align: left;
   border: black 4px solid;
   background-color: #ffffff;
   color: black;
@@ -217,9 +256,87 @@ body {
           box-shadow: 5px 5px 0px black;
 }
 
-.container .body .side .news .second h3 {
+.container .body .side .news .second .newsTitle {
+  padding-inline: 5%;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 25px;
   border-bottom: black 4px solid;
   background-color: #B7ECEC;
   color: black;
+}
+
+.container .body .side .news .second .contentNews {
+  padding-inline: 5%;
+}
+
+.container .body .side .news .second .contentNews .subTitleNews {
+  text-align: left;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+  color: black;
+}
+
+@-webkit-keyframes default_anim {
+  0% {
+    -webkit-transform: rotateZ(-8deg) translateX(-50px) translateY(0px);
+            transform: rotateZ(-8deg) translateX(-50px) translateY(0px);
+    -webkit-box-shadow: 5px 5px 0px black;
+            box-shadow: 5px 5px 0px black;
+  }
+  100% {
+    -webkit-transform: rotateZ(-8deg) translateX(-50px) translateY(5px);
+            transform: rotateZ(-8deg) translateX(-50px) translateY(5px);
+    -webkit-box-shadow: 10px 10px 0px black;
+            box-shadow: 10px 10px 0px black;
+  }
+}
+
+@keyframes default_anim {
+  0% {
+    -webkit-transform: rotateZ(-8deg) translateX(-50px) translateY(0px);
+            transform: rotateZ(-8deg) translateX(-50px) translateY(0px);
+    -webkit-box-shadow: 5px 5px 0px black;
+            box-shadow: 5px 5px 0px black;
+  }
+  100% {
+    -webkit-transform: rotateZ(-8deg) translateX(-50px) translateY(5px);
+            transform: rotateZ(-8deg) translateX(-50px) translateY(5px);
+    -webkit-box-shadow: 10px 10px 0px black;
+            box-shadow: 10px 10px 0px black;
+  }
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 2000;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 2000;
+  }
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 /*# sourceMappingURL=style.css.map */

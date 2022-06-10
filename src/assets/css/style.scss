@@ -11,6 +11,7 @@ body{
     background: #FFDCAB;
     font-size: 18px;
     height: 100vh;
+    
 }
 
 /*
@@ -37,7 +38,8 @@ body{
             }
         }
         .navbar{
-            padding-block: 5%;
+            animation:scale-up-center 0.4s;
+            padding-block: 30px;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -52,12 +54,19 @@ body{
                 border: rgb(0, 0, 0) 3px solid;
                 border-radius: 5px;
                 box-shadow: 3px 3px 0px rgb(0, 0, 0);
+                &:hover{
+                    background-color: #fba504;
+                    transition: 0.3s;
+                    box-shadow: 1px 1px 0px rgb(0, 0, 0);
+
+                }
             }
         }
         
     }
     .body{
-        padding: 5%;
+
+        padding-inline: 5%;
         display: flex;
         flex-direction: column;
         .main{
@@ -65,40 +74,44 @@ body{
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            animation:scale-up-center 0.4s;
 
-            .welcomeText{
-                padding-block: 50px;
-
-                text-align: center;
+            .welcomeText{  
                 h1{
+                    padding: 2%;
                     font-family: 'Bebas Neue', cursive;
                     font-size: 50px;
                     font-weight: lighter;
+                    text-align: center;
                     border: black 2px solid;
                     background-color: whitesmoke;
                     // border-radius: 5px;
                     box-shadow: 5px 5px 0px rgb(0, 0, 0);
                 }
-                
             }
             // Media queries ?
             .book{
                 display: none;
             }
-            
         }
         .checkButton{
-            padding-block: 20px;
+            padding-block: 10px;
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            animation:scale-up-center 0.4s;
             .arrow{
-                transform: rotateX(180deg) rotateZ(10deg);
+                transform: rotateX(180deg) rotateZ(10deg) translateX(-30px) translateY(30px);
+                path{
+                    stroke-dasharray: 1000;
+                    stroke-dashoffset: 0;
+                    animation: dash 5s linear infinite ;
+                }
             }
             .checkLink{
                 font-family: 'Bebas Neue', cursive;
-                font-size: 40px;
+                font-size: 35px;
                 font-weight: lighter;
                 border: black 4px solid;
                 background-color: #EBB0F6;
@@ -106,13 +119,17 @@ body{
                 border-radius: 5px;
                 text-decoration: none;
                 box-shadow: 5px 5px 0px rgb(0, 0, 0);
-                transform: rotateZ(-8deg) translateX(-20px);
+                transform: rotateZ(-8deg) translateX(-50px);
+                animation: default_anim 3s linear infinite alternate;
+                padding-inline: 0px;
                 // @include key_frame("moving");
 
                 
             }
         }
         .side{
+            animation:scale-up-center 0.4s;
+
             padding-block: 50px;
             display: flex;
             flex-direction: column-reverse;
@@ -135,10 +152,27 @@ body{
                 flex-direction: column;
                 .first{
                     margin: 5%;
-                    h3{
+                    text-align: left;
+
+                    .newsTitle{
+                        padding-inline: 5%;
+
+                        // text-align: center;
+
+                        font-family: 'Bebas Neue', cursive;
+                        font-size: 25px;
                         border-bottom: black 4px solid;
                         background-color: #CEF4AE;
                         color: black;
+                    }
+                    .contentNews{
+                        padding-inline: 5%;
+                        .subTitleNews{
+                            text-align: left;
+                            font-family: 'Bebas Neue', cursive;
+                            font-size: 30px;
+                            color: black;
+                        }
                     }
                     border: black 4px solid;
                     background-color: #ffffff;
@@ -148,11 +182,25 @@ body{
                 }
                 .second{
                     margin: 5%;
-                    h3{
+                    text-align: left;
+                    .newsTitle{
+                        padding-inline: 5%;
+                        font-family: 'Bebas Neue', cursive;
+                        font-size: 25px;
                         border-bottom: black 4px solid;
                         background-color: #B7ECEC;
                         color: black;
                     }
+                    .contentNews{
+                        padding-inline: 5%;
+                        .subTitleNews{
+                            text-align: left;
+                            font-family: 'Bebas Neue', cursive;
+                            font-size: 30px;
+                            color: black;
+                        }
+                    }
+                    
                     border: black 4px solid;
                     background-color: #ffffff;
                     color: black;
@@ -168,26 +216,33 @@ body{
 // Animation | Keyframe
 //TODO: Hmm pas sûr là les anims
 
-@mixin key_frame($name: "default_anim", $duration: 333ms, $count: infinit) {
-    @keyframes default_anim {
-        0% {
-            bottom: -7px;
-        }
-        100% {
-            bottom: 0;
-        }
+@keyframes default_anim {
+    0% {
+        
+        transform : rotateZ(-8deg) translateX(-50px) translateY(0px);
+        box-shadow: 5px 5px 0px rgb(0, 0, 0);
     }
+    100% {
+        transform : rotateZ(-8deg) translateX(-50px) translateY(5px);
 
-    @keyframes moving {
-        0% {
-            color: white;
-        }
-        100% {
-            color: #000000;
-        }
+        box-shadow: 10px 10px 0px rgb(0, 0, 0);
     }
+}
+@keyframes dash{
 
-    animation-name: $name;
-    animation-duration: $duration;
-    animation-iteration-count: $count;
+to {
+    stroke-dashoffset: 2000;
+  }
+    
+}
+
+@keyframes scale-up-center{
+
+    0%{
+        transform:scale(.5)
+    }
+    
+    100%{
+        transform:scale(1)
+    } 
 }
