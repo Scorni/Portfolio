@@ -20,11 +20,8 @@ body{
 *   Responsive & static RN
 */
 .container{
-    margin: 0 auto;
-    text-align: center;
     .header{
-        
-
+        text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -66,149 +63,199 @@ body{
         }
         
     }
-    .body{
-
-        padding-inline: 5%;
+    .homepage{
+        margin: 0 auto;
+        text-align: center;
+        
+        .body{
+    
+            padding-inline: 5%;
+            display: flex;
+            flex-direction: column;
+            .main{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                animation:scale-up-center 0.4s;
+    
+                .welcomeText{  
+                    h1{
+                        padding: 2%;
+                        font-family: 'Bebas Neue', cursive;
+                        font-size: 50px;
+                        font-weight: lighter;
+                        text-align: center;
+                        border: black 2px solid;
+                        background-color: whitesmoke;
+                        // border-radius: 5px;
+                        box-shadow: 5px 5px 0px rgb(0, 0, 0);
+                    }
+                }
+                // Media queries ?
+                .book{
+                    display: none;
+                }
+            }
+            .checkButton{
+                padding-block: 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                animation:scale-up-center 0.4s;
+                .arrow{
+                    transform: rotateX(180deg) rotateZ(10deg) translateX(-30px) translateY(30px);
+                    path{
+                        stroke-dasharray: 1000;
+                        stroke-dashoffset: 0;
+                        animation: dash 5s linear infinite ;
+                    }
+                }
+                .checkLink{
+                    font-family: 'Bebas Neue', cursive;
+                    font-size: 35px;
+                    font-weight: lighter;
+                    border: black 4px solid;
+                    background-color: #EBB0F6;
+                    color: black;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+                    transform: rotateZ(-8deg) translateX(-50px);
+                    animation: default_anim 3s linear infinite alternate;
+                    padding-inline: 0px;
+                    // @include key_frame("moving");
+    
+                    
+                }
+            }
+            .side{
+                animation:scale-up-center 0.4s;
+    
+                padding-block: 50px;
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                .informations{
+                    p{
+                        margin: 5%;
+                    }
+                }
+                .separator{
+                    width: 100%;
+                    hr{
+                        border: 0;
+                        border: 1px solid #000000;
+                        width: 100%;
+                    }
+                }
+                .news{
+                    flex-direction: column;
+                    .first{
+                        margin: 5%;
+                        text-align: left;
+    
+                        .newsTitle{
+                            padding-inline: 5%;
+    
+                            // text-align: center;
+    
+                            font-family: 'Bebas Neue', cursive;
+                            font-size: 25px;
+                            border-bottom: black 4px solid;
+                            background-color: #CEF4AE;
+                            color: black;
+                        }
+                        .contentNews{
+                            padding-inline: 5%;
+                            .subTitleNews{
+                                text-align: left;
+                                font-family: 'Bebas Neue', cursive;
+                                font-size: 30px;
+                                color: black;
+                            }
+                        }
+                        border: black 4px solid;
+                        background-color: #ffffff;
+                        color: black;
+                        border-radius: 5px;
+                        box-shadow: 5px 5px 0px rgb(0, 0, 0);
+                    }
+                    .second{
+                        margin: 5%;
+                        text-align: left;
+                        .newsTitle{
+                            padding-inline: 5%;
+                            font-family: 'Bebas Neue', cursive;
+                            font-size: 25px;
+                            border-bottom: black 4px solid;
+                            background-color: #B7ECEC;
+                            color: black;
+                        }
+                        .contentNews{
+                            padding-inline: 5%;
+                            .subTitleNews{
+                                text-align: left;
+                                font-family: 'Bebas Neue', cursive;
+                                font-size: 30px;
+                                color: black;
+                            }
+                        }
+                        
+                        border: black 4px solid;
+                        background-color: #ffffff;
+                        color: black;
+                        border-radius: 5px;
+                        box-shadow: 5px 5px 0px rgb(0, 0, 0);
+                    }
+                }
+            }
+        }
+        
+    }
+    /** ABOUT Page**/
+    .about{
         display: flex;
         flex-direction: column;
-        .main{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            animation:scale-up-center 0.4s;
+        justify-content: center;
+        .profile{
+            margin: 0 auto;
+            
+            .lines{
+                width: 50px;
+                animation: blink 1s steps(2, start) infinite;
 
-            .welcomeText{  
-                h1{
-                    padding: 2%;
-                    font-family: 'Bebas Neue', cursive;
-                    font-size: 50px;
-                    font-weight: lighter;
-                    text-align: center;
-                    border: black 2px solid;
-                    background-color: whitesmoke;
-                    // border-radius: 5px;
-                    box-shadow: 5px 5px 0px rgb(0, 0, 0);
-                }
             }
-            // Media queries ?
-            .book{
-                display: none;
-            }
-        }
-        .checkButton{
-            padding-block: 10px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            animation:scale-up-center 0.4s;
-            .arrow{
-                transform: rotateX(180deg) rotateZ(10deg) translateX(-30px) translateY(30px);
-                path{
-                    stroke-dasharray: 1000;
-                    stroke-dashoffset: 0;
-                    animation: dash 5s linear infinite ;
-                }
-            }
-            .checkLink{
-                font-family: 'Bebas Neue', cursive;
-                font-size: 35px;
-                font-weight: lighter;
-                border: black 4px solid;
-                background-color: #EBB0F6;
-                color: black;
-                border-radius: 5px;
-                text-decoration: none;
-                box-shadow: 5px 5px 0px rgb(0, 0, 0);
-                transform: rotateZ(-8deg) translateX(-50px);
-                animation: default_anim 3s linear infinite alternate;
-                padding-inline: 0px;
-                // @include key_frame("moving");
-
+            .bubble{
+                text-align: center;
+                // position: relative;
+                margin-left: 0px;
+                margin-top: -120px;
                 
             }
+
         }
-        .side{
-            animation:scale-up-center 0.4s;
-
-            padding-block: 50px;
+        .formation{
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
             justify-content: center;
-            align-items: center;
-            .informations{
-                p{
-                    margin: 5%;
-                }
-            }
-            .separator{
-                width: 100%;
-                hr{
-                    border: 0;
-                    border: 1px solid #000000;
-                    width: 100%;
-                }
-            }
-            .news{
-                flex-direction: column;
-                .first{
-                    margin: 5%;
-                    text-align: left;
-
-                    .newsTitle{
-                        padding-inline: 5%;
-
-                        // text-align: center;
-
-                        font-family: 'Bebas Neue', cursive;
-                        font-size: 25px;
-                        border-bottom: black 4px solid;
-                        background-color: #CEF4AE;
-                        color: black;
-                    }
-                    .contentNews{
-                        padding-inline: 5%;
-                        .subTitleNews{
-                            text-align: left;
-                            font-family: 'Bebas Neue', cursive;
-                            font-size: 30px;
-                            color: black;
-                        }
-                    }
-                    border: black 4px solid;
-                    background-color: #ffffff;
-                    color: black;
-                    border-radius: 5px;
-                    box-shadow: 5px 5px 0px rgb(0, 0, 0);
-                }
-                .second{
-                    margin: 5%;
-                    text-align: left;
-                    .newsTitle{
-                        padding-inline: 5%;
-                        font-family: 'Bebas Neue', cursive;
-                        font-size: 25px;
-                        border-bottom: black 4px solid;
-                        background-color: #B7ECEC;
-                        color: black;
-                    }
-                    .contentNews{
-                        padding-inline: 5%;
-                        .subTitleNews{
-                            text-align: left;
-                            font-family: 'Bebas Neue', cursive;
-                            font-size: 30px;
-                            color: black;
-                        }
-                    }
-                    
-                    border: black 4px solid;
-                    background-color: #ffffff;
-                    color: black;
-                    border-radius: 5px;
-                    box-shadow: 5px 5px 0px rgb(0, 0, 0);
-                }
+            text-align: center;
+            margin: 5%;
+            width: auto;
+            height: 50;
+            padding: 10px;
+            border: black 4px solid;
+            border-radius: 5px;
+            box-shadow: 5px 5px 0px rgb(0, 0, 0);
+            background-color: #B926D1;
+            background-image: url(../svg/about/hexagon.svg);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            color: #E3F1FC;
+            p{
+                font-size: 20px;
             }
         }
     }
@@ -216,7 +263,8 @@ body{
 }
 
 // Animation | Keyframe
-//TODO: Hmm pas sûr là les anims
+
+//HOMEPAGE
 
 @keyframes default_anim {
     0% {
@@ -242,9 +290,22 @@ to {
 
     0%{
         transform:scale(.5)
+        
     }
     
     100%{
         transform:scale(1)
     } 
+}
+
+//ABOUT
+
+@keyframes blink {
+    0%{
+        transform:   scale(0.25) translateY(900px) translateX(-700px) rotateZ(-110deg)  ;
+    }
+    
+    100%{
+        transform:   translateY(-50px)translateX(120px)  rotateZ(30deg) ;
+    }
 }

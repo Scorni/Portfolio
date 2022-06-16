@@ -1,13 +1,57 @@
 import React from "react";
- 
+import Bubble from "../assets/svg/about/Bubble.js";
+import picture from "../assets/img/bubble.png"
+import Lines from '../assets/svg/about/lines'
 // Here, we display our Navbar
-export default function Arrow() {
+export default function About() {
  return (
-    <svg className="arrow" xmlns="http://www.w3.org/2000/svg" width="175" height="120" viewBox="0 0 100 100">
-        <g fill="none" stroke="#000" strokeWidth="3" strokeLinecap="round" strokeMiterlimit="10">
-            <path d="M108.519 35.397c-9.013 8.839-24.133 9.449-34.974 3.485-4.474-2.461-10.037-7.56-8.195-13.4.818-2.596 4.623-7.007 7.465-3.78 3.573 4.061-3.756 11.358-6.245 13.396-6.997 5.731-16.648 7.996-25.507 6.503-20.278-3.415-29.921-23.09-37.544-39.87"/>
-            <path strokeLinejoin="round" d="M109.988 43.269c-.98-4.277 1.606-7.742 1.49-11.938-2.883 1.396-8.855 3.965-12.196 3.507"/>
-        </g>
-    </svg>
+    <div className="about">
+        <div className="profile">
+            <div className="lines">
+                <Lines />
+            </div>
+            <div className="bubble">
+                <img src={picture} alt="test" className="me superpose" />
+            </div>
+        </div>
+        <div className="formation">
+            <div className="first">
+                <div className="firstStars">
+
+                </div>
+                <div className="leaf">
+
+                </div>
+                <p>
+                Born in Belgium in 1997, so definitely a millennials
+                </p>
+            </div>
+            <div className="second">
+                <div className="secondStars">
+
+                </div>
+                <div className="firstArrow">
+
+                </div>
+                <div className="hexagon">
+
+                </div>
+                <p>
+
+                </p>
+            </div>
+            <div className="third">
+                <div className="secondArrow">
+
+                </div>
+                <div className="sun">
+
+                </div>          
+                <p>
+
+                </p>
+            </div>
+        </div>
+    </div>
  );
 }

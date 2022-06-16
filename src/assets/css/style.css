@@ -20,11 +20,11 @@ body {
 *   Responsive & static RN
 */
 .container {
-  margin: 0 auto;
-  text-align: center;
+  /** ABOUT Page**/
 }
 
 .container .header {
+  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,7 +83,12 @@ body {
           box-shadow: 1px 1px 0px black;
 }
 
-.container .body {
+.container .homepage {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container .homepage .body {
   padding-inline: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -94,7 +99,7 @@ body {
           flex-direction: column;
 }
 
-.container .body .main {
+.container .homepage .body .main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,7 +117,7 @@ body {
           animation: scale-up-center 0.4s;
 }
 
-.container .body .main .welcomeText h1 {
+.container .homepage .body .main .welcomeText h1 {
   padding: 2%;
   font-family: 'Bebas Neue', cursive;
   font-size: 50px;
@@ -124,11 +129,11 @@ body {
           box-shadow: 5px 5px 0px black;
 }
 
-.container .body .main .book {
+.container .homepage .body .main .book {
   display: none;
 }
 
-.container .body .checkButton {
+.container .homepage .body .checkButton {
   padding-block: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,19 +152,19 @@ body {
           animation: scale-up-center 0.4s;
 }
 
-.container .body .checkButton .arrow {
+.container .homepage .body .checkButton .arrow {
   -webkit-transform: rotateX(180deg) rotateZ(10deg) translateX(-30px) translateY(30px);
           transform: rotateX(180deg) rotateZ(10deg) translateX(-30px) translateY(30px);
 }
 
-.container .body .checkButton .arrow path {
+.container .homepage .body .checkButton .arrow path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 0;
   -webkit-animation: dash 5s linear infinite;
           animation: dash 5s linear infinite;
 }
 
-.container .body .checkButton .checkLink {
+.container .homepage .body .checkButton .checkLink {
   font-family: 'Bebas Neue', cursive;
   font-size: 35px;
   font-weight: lighter;
@@ -177,7 +182,7 @@ body {
   padding-inline: 0px;
 }
 
-.container .body .side {
+.container .homepage .body .side {
   -webkit-animation: scale-up-center 0.4s;
           animation: scale-up-center 0.4s;
   padding-block: 50px;
@@ -196,28 +201,28 @@ body {
           align-items: center;
 }
 
-.container .body .side .informations p {
+.container .homepage .body .side .informations p {
   margin: 5%;
 }
 
-.container .body .side .separator {
+.container .homepage .body .side .separator {
   width: 100%;
 }
 
-.container .body .side .separator hr {
+.container .homepage .body .side .separator hr {
   border: 0;
   border: 1px solid #000000;
   width: 100%;
 }
 
-.container .body .side .news {
+.container .homepage .body .side .news {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.container .body .side .news .first {
+.container .homepage .body .side .news .first {
   margin: 5%;
   text-align: left;
   border: black 4px solid;
@@ -228,7 +233,7 @@ body {
           box-shadow: 5px 5px 0px black;
 }
 
-.container .body .side .news .first .newsTitle {
+.container .homepage .body .side .news .first .newsTitle {
   padding-inline: 5%;
   font-family: 'Bebas Neue', cursive;
   font-size: 25px;
@@ -237,18 +242,18 @@ body {
   color: black;
 }
 
-.container .body .side .news .first .contentNews {
+.container .homepage .body .side .news .first .contentNews {
   padding-inline: 5%;
 }
 
-.container .body .side .news .first .contentNews .subTitleNews {
+.container .homepage .body .side .news .first .contentNews .subTitleNews {
   text-align: left;
   font-family: 'Bebas Neue', cursive;
   font-size: 30px;
   color: black;
 }
 
-.container .body .side .news .second {
+.container .homepage .body .side .news .second {
   margin: 5%;
   text-align: left;
   border: black 4px solid;
@@ -259,7 +264,7 @@ body {
           box-shadow: 5px 5px 0px black;
 }
 
-.container .body .side .news .second .newsTitle {
+.container .homepage .body .side .news .second .newsTitle {
   padding-inline: 5%;
   font-family: 'Bebas Neue', cursive;
   font-size: 25px;
@@ -268,15 +273,75 @@ body {
   color: black;
 }
 
-.container .body .side .news .second .contentNews {
+.container .homepage .body .side .news .second .contentNews {
   padding-inline: 5%;
 }
 
-.container .body .side .news .second .contentNews .subTitleNews {
+.container .homepage .body .side .news .second .contentNews .subTitleNews {
   text-align: left;
   font-family: 'Bebas Neue', cursive;
   font-size: 30px;
   color: black;
+}
+
+.container .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .about .profile {
+  margin: 0 auto;
+}
+
+.container .about .profile .lines {
+  width: 50px;
+  -webkit-animation: blink 1s steps(2, start) infinite;
+          animation: blink 1s steps(2, start) infinite;
+}
+
+.container .about .profile .bubble {
+  text-align: center;
+  margin-left: 0px;
+  margin-top: -120px;
+}
+
+.container .about .formation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 5%;
+  width: auto;
+  height: 50;
+  padding: 10px;
+  border: black 4px solid;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 0px black;
+          box-shadow: 5px 5px 0px black;
+  background-color: #B926D1;
+  background-image: url(../svg/about/hexagon.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  color: #E3F1FC;
+}
+
+.container .about .formation p {
+  font-size: 20px;
 }
 
 @-webkit-keyframes default_anim {
@@ -340,6 +405,28 @@ body {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    -webkit-transform: scale(0.25) translateY(900px) translateX(-700px) rotateZ(-110deg);
+            transform: scale(0.25) translateY(900px) translateX(-700px) rotateZ(-110deg);
+  }
+  100% {
+    -webkit-transform: translateY(-50px) translateX(120px) rotateZ(30deg);
+            transform: translateY(-50px) translateX(120px) rotateZ(30deg);
+  }
+}
+
+@keyframes blink {
+  0% {
+    -webkit-transform: scale(0.25) translateY(900px) translateX(-700px) rotateZ(-110deg);
+            transform: scale(0.25) translateY(900px) translateX(-700px) rotateZ(-110deg);
+  }
+  100% {
+    -webkit-transform: translateY(-50px) translateX(120px) rotateZ(30deg);
+            transform: translateY(-50px) translateX(120px) rotateZ(30deg);
   }
 }
 /*# sourceMappingURL=style.css.map */
