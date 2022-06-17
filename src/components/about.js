@@ -2,6 +2,7 @@ import React from "react";
 import Bubble from "../assets/svg/about/Bubble.js";
 import picture from "../assets/img/bubble.png"
 import Lines from '../assets/svg/about/lines'
+import Hexagon from '../assets/svg/about/hexagon'
 // Here, we display our Navbar
 export default function About() {
  return (
@@ -33,10 +34,11 @@ export default function About() {
                 <div className="firstArrow">
 
                 </div>
-                <div className="hexagon">
-
+                <div>
+                    <Hexagon />
                 </div>
                 <p>
+                Born in Belgium in 1997, so definitely a millennials
 
                 </p>
             </div>
@@ -51,7 +53,9 @@ export default function About() {
 
                 </p>
             </div>
+            
         </div>
+        
     </div>
  );
 }

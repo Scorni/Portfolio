@@ -285,6 +285,8 @@ body {
 }
 
 .container .about {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,6 +329,10 @@ body {
   text-align: center;
   margin: 5%;
   width: auto;
+}
+
+.container .about .formation .first {
+  margin: 5%;
   height: 50;
   padding: 10px;
   border: black 4px solid;
@@ -340,8 +346,71 @@ body {
   color: #E3F1FC;
 }
 
-.container .about .formation p {
+.container .about .formation .first p {
   font-size: 20px;
+}
+
+.container .about .formation .second:before {
+  position: absolute;
+}
+
+.container .about .formation .second {
+  -webkit-perspective: 10px;
+          perspective: 10px;
+  -webkit-perspective-origin: 0%;
+          perspective-origin: 0%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+  margin: 5%;
+  height: 50;
+  padding: 10px;
+  border: black 4px solid;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 0px black;
+          box-shadow: 5px 5px 0px black;
+  background-color: #B926D1;
+  background-image: url(../svg/about/hexagon.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  color: #E3F1FC;
+}
+
+.container .about .formation .second p {
+  font-size: 20px;
+}
+
+.container .about .formation .second .hexagon {
+  position: absolute;
+  -webkit-transform: translateZ(10px) scale(2);
+          transform: translateZ(10px) scale(2);
+  height: 50vh;
+}
+
+.container .parallax {
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.container .parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.container .parallax__layer--base {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.container .parallax__layer--back {
+  -webkit-transform: translateZ(-1px);
+          transform: translateZ(-1px);
 }
 
 @-webkit-keyframes default_anim {

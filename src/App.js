@@ -9,7 +9,7 @@ import About from "./components/about";
 
 function App() {
   return (
-    <div className="container">
+    <div className="container parallax">
       <Header />
       <Routes>
         <Route className="navlink" exact path="/" element={<Homepage />} />
