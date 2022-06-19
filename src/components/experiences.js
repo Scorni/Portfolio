@@ -1,14 +1,18 @@
 import React from "react";
- 
-// Here, we display our Navbar
+import { Parallax } from 'react-scroll-parallax';
+
+
 export default function Experiences() {
     return(
-        <div class="parallax">
-        <div class="parallax__layer parallax__layer--back">
+        <div className="parallax">
+        <div className="parallax__layer parallax__layer--back">
+            <Parallax translateX={['-100px', '200px']}>
         <p>ddees</p>
 
+            </Parallax> 
+
         </div>
-        <div class="parallax__layer parallax__layer--base">
+        <div className="parallax__layer parallax__layer--base">
         <p>ddee</p>
         </div>
     </div>

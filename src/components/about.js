@@ -2,7 +2,9 @@ import React from "react";
 import Bubble from "../assets/svg/about/Bubble.js";
 import picture from "../assets/img/bubble.png"
 import Lines from '../assets/svg/about/lines'
-import Hexagon from '../assets/svg/about/hexagon'
+import Leafs from '../assets/svg/about/leafs'
+import { Parallax } from 'react-scroll-parallax';
+
 // Here, we display our Navbar
 export default function About() {
  return (
@@ -27,6 +29,8 @@ export default function About() {
                 Born in Belgium in 1997, so definitely a millennials
                 </p>
             </div>
+            
+            
             <div className="second">
                 <div className="secondStars">
 
@@ -34,8 +38,11 @@ export default function About() {
                 <div className="firstArrow">
 
                 </div>
+                
                 <div>
-                    <Hexagon />
+                    <Parallax translateX={['-100px','-100px']} translateY={['-30px', '30px','easeInOut']} scale= {[1, 1, 'easeInQuad']}  speed={-500}>
+                         <Leafs />
+                    </Parallax>
                 </div>
                 <p>
                 Born in Belgium in 1997, so definitely a millennials
