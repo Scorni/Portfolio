@@ -1,6 +1,6 @@
-import { Icon } from '@iconify/react';
 import { NavLink } from "react-router-dom";
 import Arrow from "./arrow";
+import { Icon } from '@iconify/react';
 
 export default function homepage() {
  return (

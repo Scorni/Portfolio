@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
-
+@font-face{
+    font-family: 'Mabry Pro';
+    src: URL('../font/Mabry-Pro-Medium.ttf') format('truetype');
+}
 * {
     margin-top: 0;
   }
@@ -218,6 +221,7 @@ body{
     }
     /** ABOUT Page**/
     .about{
+        width: 100%;
         transform-style: preserve-3d;
         
         display: flex;
@@ -248,44 +252,77 @@ body{
             justify-content: center;
             text-align: center;
             
-            margin: 5%;
+            margin: 0%;
             width: auto;
             .first{
-                margin: 5%;
                 height: 50;
-                padding: 10px;
-                border: black 4px solid;
-                border-radius: 5px;
-                box-shadow: 5px 5px 0px rgb(0, 0, 0);
-                background-color: #B926D1;
+                padding:4rem 1.5rem 4.75rem ;
+
+                border-block: black 2px solid;
+                background-color: #ff90e8;
                 background-image: url(../svg/about/hexagon.svg);
                 background-repeat: no-repeat;
                 background-position: right bottom;
-                color: #E3F1FC;
+                color: #000000;
                 p{
-                    font-size: 20px;
+                    text-align: left;
+                    font-size: 1.188rem;
+                    font-weight: normal;   
+                    font-family: 'Mabry pro', sans-serif;
+                    line-height: 1.4;
+                    letter-spacing: 0.005em;
+
                 }
-            }
-            .second{
-                margin: 5%;
-                height: 50;
-                padding: 10px;
-                border: black 4px solid;
-                border-radius: 5px;
-                box-shadow: 5px 5px 0px rgb(0, 0, 0);
-                background-color: #B926D1;
-                background-image: url(../svg/about/hexagon.svg);
-                background-repeat: no-repeat;
-                background-position: right bottom;
-                color: #E3F1FC;
-                p{
-                    font-size: 20px;
+                h2{
+                    text-align: left;
+                    font-family: 'Mabry pro', sans-serif;
+                    font-weight: 300;
+
                 }
-                .leafs{
-                    left: 7vh;
+                .cake{
+                    left: 250px;
+                    top : -50px;
                     position: fixed;
                     transform-origin: center;
                     transform: rotateZ(-45deg);
+                    color: #111;
+                    font-size: 50px;
+                    background-color: #FFB443;
+                    border: #000000 solid 2px;
+                    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+                    animation: swing 3s linear infinite alternate;
+                    
+                }
+            }
+            .second{
+                height: 50;
+                padding:4rem 1.5rem 4.75rem ;
+                border-bottom: black 2px solid;
+                background-color: #ff90e8;
+                background-image: url(../svg/about/hexagon.svg);
+                background-repeat: no-repeat;
+                background-position: right bottom;
+                color: #000000;
+                p{
+                    font-size: 20px;
+                    font-weight: 100;
+                    font-family: 'Mabry Pro', sans-serif;
+                    text-align: left;
+
+                }
+                .cake{
+                    text-align: left;
+                    top : -50px;
+                    position: fixed;
+                    transform-origin: center;
+                    transform: rotateZ(-45deg);
+                    color: #111;
+                    font-size: 40px;
+                    // background-color: #FFB443;
+                    // border: #000000 solid 2px;
+                    // box-shadow: 5px 5px 0px rgb(0, 0, 0);
+                    animation: swing 3s linear infinite alternate;
+                    
                 }
                
             }
@@ -342,5 +379,14 @@ to {
     
     100%{
         transform:   translateY(-50px)translateX(120px)  rotateZ(30deg) ;
+    }
+}
+
+@keyframes swing {
+    0% {
+        transform:   rotate(-5deg);
+    }
+    100% {
+        transform:  rotate(5deg);
     }
 }
