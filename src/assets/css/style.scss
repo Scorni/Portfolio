@@ -222,7 +222,6 @@ body{
     /** ABOUT Page**/
     .about{
         width: 100%;
-        transform-style: preserve-3d;
         
         display: flex;
         flex-direction: column;
@@ -242,7 +241,12 @@ body{
                 margin-left: 0px;
                 margin-top: -120px;
                 
+                .me{
+                    max-width:100%;
+                max-height:100%;
+                }
             }
+            
 
         }
         .formation{
@@ -255,15 +259,62 @@ body{
             margin: 0%;
             width: auto;
             .first{
-                height: 50;
                 padding:4rem 1.5rem 4.75rem ;
-
                 border-block: black 2px solid;
-                background-color: #ff90e8;
-                background-image: url(../svg/about/hexagon.svg);
+                background-color: #BED3C3;
+                // background-image: url(../svg/about/hexagon.svg);
                 background-repeat: no-repeat;
                 background-position: right bottom;
                 color: #000000;
+                h2{
+                    text-align: center;
+                    font-family: 'Mabry pro', sans-serif;
+                    font-weight: 300;
+
+                }
+                p{
+                    text-align: center;
+                    font-size: 1.188rem;
+                    font-weight: normal;   
+                    font-family: 'Mabry pro', sans-serif;
+                    line-height: 1.4;
+                    letter-spacing: 0.005em;
+
+                }
+                .cake{
+                    left: 35vh;
+                    top : -50px;
+                    position: fixed;
+                    transform-origin: center;
+                    transform: rotateZ(-45deg);
+                    color: #111;
+                    font-size: 50px;
+                    background-color: #f7f2f2;
+                    border: #000000 solid 2px;
+                    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+                    animation: swing 3s linear infinite alternate;
+                    
+                }
+            }
+            .study{
+                background-color: #FFDCAB;
+                z-index: -1;
+                width: auto;
+            }
+            .second{
+                padding:4rem 1.5rem 4.75rem ;
+                border-block: black 2px solid;
+                background-color: #EBACA2;
+                // background-image: url(../svg/about/hexagon.svg);
+                background-repeat: no-repeat;
+                background-position: right bottom;
+                color: #000000;
+                h2{
+                    text-align: left;
+                    font-family: 'Mabry pro', sans-serif;
+                    font-weight: 300;
+
+                }
                 p{
                     text-align: left;
                     font-size: 1.188rem;
@@ -273,58 +324,62 @@ body{
                     letter-spacing: 0.005em;
 
                 }
+                .javascript{
+                    text-align: left;
+                    left: 5vh;
+                    position: fixed;
+                    transform-origin: center;
+                    transform: rotateZ(15deg);
+                    color: #111;
+                    border: #000000 solid 2px;
+                    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+                    animation: swing 3s linear infinite alternate;
+                    
+                }
+                .php{
+                    text-align: left;
+                    left: 25vh;
+                    position: fixed;
+                    transform-origin: center;
+                    transform: rotateZ(15deg);
+                    color: #111;
+                    
+                    border: #000000 solid 2px;
+                    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+                    animation: swing 2s linear infinite alternate;
+                    
+                }
+               
+            }
+            .third{
+                padding:4rem 1.5rem 4.75rem ;
+                border-block: black 2px solid;
+                background-color: #CE6A6B;
+                // background-image: url(../svg/about/hexagon.svg);
+                background-repeat: no-repeat;
+                background-position: right bottom;
+                color: #000000;
                 h2{
                     text-align: left;
                     font-family: 'Mabry pro', sans-serif;
                     font-weight: 300;
 
                 }
-                .cake{
-                    left: 250px;
-                    top : -50px;
-                    position: fixed;
-                    transform-origin: center;
-                    transform: rotateZ(-45deg);
-                    color: #111;
-                    font-size: 50px;
-                    background-color: #FFB443;
-                    border: #000000 solid 2px;
-                    box-shadow: 5px 5px 0px rgb(0, 0, 0);
-                    animation: swing 3s linear infinite alternate;
-                    
-                }
-            }
-            .second{
-                height: 50;
-                padding:4rem 1.5rem 4.75rem ;
-                border-bottom: black 2px solid;
-                background-color: #ff90e8;
-                background-image: url(../svg/about/hexagon.svg);
-                background-repeat: no-repeat;
-                background-position: right bottom;
-                color: #000000;
                 p{
-                    font-size: 20px;
-                    font-weight: 100;
-                    font-family: 'Mabry Pro', sans-serif;
                     text-align: left;
+                    font-size: 1.188rem;
+                    font-weight: normal;   
+                    font-family: 'Mabry pro', sans-serif;
+                    line-height: 1.4;
+                    letter-spacing: 0.005em;
 
                 }
-                .cake{
-                    text-align: left;
-                    top : -50px;
-                    position: fixed;
-                    transform-origin: center;
-                    transform: rotateZ(-45deg);
-                    color: #111;
-                    font-size: 40px;
-                    // background-color: #FFB443;
-                    // border: #000000 solid 2px;
-                    // box-shadow: 5px 5px 0px rgb(0, 0, 0);
-                    animation: swing 3s linear infinite alternate;
-                    
-                }
                
+            }
+            .workingAtHome{
+                background-color: #FFDCAB;
+                z-index: -1;
+                width: auto;
             }
             
         }

@@ -291,8 +291,6 @@ body {
 
 .container .about {
   width: 100%;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,6 +319,11 @@ body {
   margin-top: -120px;
 }
 
+.container .about .profile .bubble .me {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .container .about .formation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -338,18 +341,22 @@ body {
 }
 
 .container .about .formation .first {
-  height: 50;
   padding: 4rem 1.5rem 4.75rem;
   border-block: black 2px solid;
-  background-color: #ff90e8;
-  background-image: url(../svg/about/hexagon.svg);
+  background-color: #BED3C3;
   background-repeat: no-repeat;
   background-position: right bottom;
   color: #000000;
 }
 
+.container .about .formation .first h2 {
+  text-align: center;
+  font-family: 'Mabry pro', sans-serif;
+  font-weight: 300;
+}
+
 .container .about .formation .first p {
-  text-align: left;
+  text-align: center;
   font-size: 1.188rem;
   font-weight: normal;
   font-family: 'Mabry pro', sans-serif;
@@ -357,14 +364,8 @@ body {
   letter-spacing: 0.005em;
 }
 
-.container .about .formation .first h2 {
-  text-align: left;
-  font-family: 'Mabry pro', sans-serif;
-  font-weight: 300;
-}
-
 .container .about .formation .first .cake {
-  left: 250px;
+  left: 35vh;
   top: -50px;
   position: fixed;
   -webkit-transform-origin: center;
@@ -373,7 +374,7 @@ body {
           transform: rotateZ(-45deg);
   color: #111;
   font-size: 50px;
-  background-color: #FFB443;
+  background-color: #f7f2f2;
   border: #000000 solid 2px;
   -webkit-box-shadow: 5px 5px 0px black;
           box-shadow: 5px 5px 0px black;
@@ -381,36 +382,96 @@ body {
           animation: swing 3s linear infinite alternate;
 }
 
+.container .about .formation .study {
+  background-color: #FFDCAB;
+  z-index: -1;
+  width: auto;
+}
+
 .container .about .formation .second {
-  height: 50;
   padding: 4rem 1.5rem 4.75rem;
-  border-bottom: black 2px solid;
-  background-color: #ff90e8;
-  background-image: url(../svg/about/hexagon.svg);
+  border-block: black 2px solid;
+  background-color: #EBACA2;
   background-repeat: no-repeat;
   background-position: right bottom;
   color: #000000;
 }
 
-.container .about .formation .second p {
-  font-size: 20px;
-  font-weight: 100;
-  font-family: 'Mabry Pro', sans-serif;
+.container .about .formation .second h2 {
   text-align: left;
+  font-family: 'Mabry pro', sans-serif;
+  font-weight: 300;
 }
 
-.container .about .formation .second .cake {
+.container .about .formation .second p {
   text-align: left;
-  top: -50px;
+  font-size: 1.188rem;
+  font-weight: normal;
+  font-family: 'Mabry pro', sans-serif;
+  line-height: 1.4;
+  letter-spacing: 0.005em;
+}
+
+.container .about .formation .second .javascript {
+  text-align: left;
+  left: 5vh;
   position: fixed;
   -webkit-transform-origin: center;
           transform-origin: center;
-  -webkit-transform: rotateZ(-45deg);
-          transform: rotateZ(-45deg);
+  -webkit-transform: rotateZ(15deg);
+          transform: rotateZ(15deg);
   color: #111;
-  font-size: 40px;
+  border: #000000 solid 2px;
+  -webkit-box-shadow: 5px 5px 0px black;
+          box-shadow: 5px 5px 0px black;
   -webkit-animation: swing 3s linear infinite alternate;
           animation: swing 3s linear infinite alternate;
+}
+
+.container .about .formation .second .php {
+  text-align: left;
+  left: 25vh;
+  position: fixed;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotateZ(15deg);
+          transform: rotateZ(15deg);
+  color: #111;
+  border: #000000 solid 2px;
+  -webkit-box-shadow: 5px 5px 0px black;
+          box-shadow: 5px 5px 0px black;
+  -webkit-animation: swing 2s linear infinite alternate;
+          animation: swing 2s linear infinite alternate;
+}
+
+.container .about .formation .third {
+  padding: 4rem 1.5rem 4.75rem;
+  border-block: black 2px solid;
+  background-color: #CE6A6B;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  color: #000000;
+}
+
+.container .about .formation .third h2 {
+  text-align: left;
+  font-family: 'Mabry pro', sans-serif;
+  font-weight: 300;
+}
+
+.container .about .formation .third p {
+  text-align: left;
+  font-size: 1.188rem;
+  font-weight: normal;
+  font-family: 'Mabry pro', sans-serif;
+  line-height: 1.4;
+  letter-spacing: 0.005em;
+}
+
+.container .about .formation .workingAtHome {
+  background-color: #FFDCAB;
+  z-index: -1;
+  width: auto;
 }
 
 @-webkit-keyframes default_anim {
