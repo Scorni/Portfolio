@@ -1,0 +1,300 @@
+.about {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .profile {
+  margin: 0 auto;
+}
+
+.about .profile .lines {
+  width: 50px;
+  -webkit-animation: blink 1s steps(2, start) infinite;
+          animation: blink 1s steps(2, start) infinite;
+}
+
+.about .profile .bubble {
+  text-align: center;
+  margin-left: 0px;
+  margin-top: -120px;
+}
+
+.about .profile .bubble .me {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.about .formation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 0%;
+  width: auto;
+}
+
+.about .formation .first {
+  padding: 4rem 1.5rem 4.75rem;
+  border-block: black 2px solid;
+  background-color: #BED3C3;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  color: #000000;
+}
+
+.about .formation .first h2 {
+  text-align: center;
+  font-family: 'Mabry pro', sans-serif;
+  font-weight: 300;
+}
+
+.about .formation .first p {
+  text-align: center;
+  font-size: 1.188rem;
+  font-weight: normal;
+  font-family: 'Mabry pro', sans-serif;
+  line-height: 1.4;
+  letter-spacing: 0.005em;
+}
+
+.about .formation .first .cake {
+  left: 35vh;
+  top: -50px;
+  position: fixed;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+  color: #111;
+  font-size: 50px;
+  background-color: #f7f2f2;
+  border: #000000 solid 2px;
+  -webkit-box-shadow: 5px 5px 0px black;
+          box-shadow: 5px 5px 0px black;
+  -webkit-animation: swing 3s linear infinite alternate;
+          animation: swing 3s linear infinite alternate;
+}
+
+.about .formation .study {
+  background-color: #FFDCAB;
+  z-index: -1;
+  width: auto;
+}
+
+.about .formation .second {
+  padding: 4rem 1.5rem 4.75rem;
+  border-block: black 2px solid;
+  background-color: #EBACA2;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  color: #000000;
+}
+
+.about .formation .second h2 {
+  text-align: left;
+  font-family: 'Mabry pro', sans-serif;
+  font-weight: 300;
+}
+
+.about .formation .second p {
+  text-align: left;
+  font-size: 1.188rem;
+  font-weight: normal;
+  font-family: 'Mabry pro', sans-serif;
+  line-height: 1.4;
+  letter-spacing: 0.005em;
+}
+
+.about .formation .second .javascript {
+  text-align: left;
+  left: 5vh;
+  position: fixed;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotateZ(15deg);
+          transform: rotateZ(15deg);
+  color: #111;
+  border: #000000 solid 2px;
+  -webkit-box-shadow: 5px 5px 0px black;
+          box-shadow: 5px 5px 0px black;
+  -webkit-animation: swing 3s linear infinite alternate;
+          animation: swing 3s linear infinite alternate;
+}
+
+.about .formation .second .php {
+  text-align: left;
+  left: 25vh;
+  position: fixed;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: rotateZ(15deg);
+          transform: rotateZ(15deg);
+  color: #111;
+  border: #000000 solid 2px;
+  -webkit-box-shadow: 5px 5px 0px black;
+          box-shadow: 5px 5px 0px black;
+  -webkit-animation: swing 2s linear infinite alternate;
+          animation: swing 2s linear infinite alternate;
+}
+
+.about .formation .third {
+  padding: 4rem 1.5rem 4.75rem;
+  border-block: black 2px solid;
+  background-color: #CE6A6B;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  color: #000000;
+}
+
+.about .formation .third h2 {
+  text-align: left;
+  font-family: 'Mabry pro', sans-serif;
+  font-weight: 300;
+}
+
+.about .formation .third p {
+  text-align: left;
+  font-size: 1.188rem;
+  font-weight: normal;
+  font-family: 'Mabry pro', sans-serif;
+  line-height: 1.4;
+  letter-spacing: 0.005em;
+}
+
+.about .formation .workingAtHome {
+  background-color: #FFDCAB;
+  z-index: -1;
+  width: auto;
+}
+
+.about .formation .contactMe {
+  position: absolute;
+  margin: auto;
+  width: 18rem;
+  padding: 1.2rem 1.5rem;
+  font-family: 'Mabry pro', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  letter-spacing: 0.005em;
+  border: black 4px solid;
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+  -webkit-animation: first 3s linear infinite alternate;
+          animation: first 3s linear infinite alternate;
+  padding-inline: 0px;
+  z-index: 2;
+}
+
+.about .formation .triple:hover .contactMe {
+  -webkit-transform: translate3d(-1rem, -1rem, 0px);
+          transform: translate3d(-1rem, -1rem, 0px);
+}
+
+.about .formation .triple:hover .shadowOne {
+  -webkit-transform: translate3d(-0.5rem, -0.5rem, 0px);
+          transform: translate3d(-0.5rem, -0.5rem, 0px);
+}
+
+.about .formation .shadowOne {
+  position: absolute;
+  margin: auto;
+  width: 18rem;
+  padding: 1.2rem 1.5rem;
+  font-family: 'Mabry pro', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  letter-spacing: 0.005em;
+  border: black 4px solid;
+  background-color: #212E53;
+  color: white;
+  text-decoration: none;
+  -webkit-animation: first 3s linear infinite alternate;
+          animation: first 3s linear infinite alternate;
+  padding-inline: 0px;
+  z-index: 1;
+}
+
+.about .formation .shadowTwo {
+  position: absolute;
+  margin: auto;
+  width: 18rem;
+  padding: 1.2rem 1.5rem;
+  font-family: 'Mabry pro', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  letter-spacing: 0.005em;
+  border: black 4px solid;
+  background-color: #4A919E;
+  color: white;
+  text-decoration: none;
+  -webkit-animation: first 3s linear infinite alternate;
+          animation: first 3s linear infinite alternate;
+  padding-inline: 0px;
+  z-index: 0;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    -webkit-transform: scale(0.25) translateY(900px) translateX(-700px) rotateZ(-110deg);
+            transform: scale(0.25) translateY(900px) translateX(-700px) rotateZ(-110deg);
+  }
+  100% {
+    -webkit-transform: translateY(-50px) translateX(120px) rotateZ(30deg);
+            transform: translateY(-50px) translateX(120px) rotateZ(30deg);
+  }
+}
+
+@keyframes blink {
+  0% {
+    -webkit-transform: scale(0.25) translateY(900px) translateX(-700px) rotateZ(-110deg);
+            transform: scale(0.25) translateY(900px) translateX(-700px) rotateZ(-110deg);
+  }
+  100% {
+    -webkit-transform: translateY(-50px) translateX(120px) rotateZ(30deg);
+            transform: translateY(-50px) translateX(120px) rotateZ(30deg);
+  }
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+}
+
+@-webkit-keyframes triple {}
+
+@keyframes triple {}
+/*# sourceMappingURL=about.css.map */

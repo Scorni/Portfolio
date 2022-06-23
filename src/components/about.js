@@ -1,3 +1,4 @@
+import '../assets/css/about/about.css';
 import React from "react";
 import picture from "../assets/img/bubble.png"
 import Lines from '../assets/svg/about/lines'
@@ -66,9 +67,19 @@ export default function About() {
                 <h2>At the moment</h2>
                 <p>
                     During his free time he's learning evenly from UX | UI design to maintain database's structure. <br />
-                    He's looking after project to work on, as frontend or backend dev
+                    He's looking after project to work on, as frontend or backend dev.
                 </p>
-                <button></button>
+                <a className='triple'>
+                    <div className='contactMe'>
+                        Contact me
+                    </div>
+                    <div className='shadowOne'>
+                        .
+                    </div>
+                    <div className='shadowTwo'>
+                        .
+                    </div>
+                </a>
             </div>
             
         </div>

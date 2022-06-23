@@ -1,3 +1,5 @@
+import '../assets/css/homepage/homepage.css';
+
 import { NavLink } from "react-router-dom";
 import Arrow from "./arrow";
 import { Icon } from '@iconify/react';
