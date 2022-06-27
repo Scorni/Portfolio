@@ -31,7 +31,6 @@ export default function homepage() {
           </p>
         </div>
         <div className="separator">
-          {/* <hr /> */}
         </div>
         <div className="news">
           <div className="first">

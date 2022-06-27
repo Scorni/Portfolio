@@ -67,44 +67,61 @@
         }
         .side{
             animation:scale-up-center 0.4s;
-
             padding-block: 50px;
             display: flex;
-            flex-direction: column-reverse;
             justify-content: center;
             align-items: center;
+            
+            @media screen and (max-width: 1200px) {
+                flex-direction: column-reverse;
+
+            }
+            @media screen and (min-width: 1200px) {
+                flex-direction: row;
+
+            }
             .informations{
                 p{
                     margin: 5%;
+                    width: 20rem;
+                    padding-inline: 1.2rem 1.5rem;
+
                 }
             }
             .separator{
-                width: 100%;
-                hr{
-                    border: 0;
-                    border: 1px solid #000000;
-                    width: 100%;
-                }
+              
             }
             .news{
-                flex-direction: column;
+                @media screen and (max-width: 1200px) {
+                    flex-direction: column;
+                    margin: auto 0;
+                }
+                @media screen and (min-width: 1200px) {
+                    flex-direction: row;
+                    width: 70rem;
+
+                }
+                display: flex;
+                justify-content: center;
+
                 .first{
                     margin: 5%;
                     text-align: left;
-
                     .newsTitle{
-                        padding-inline: 5%;
+                        padding-inline: 1.2rem 1.5rem;
 
                         // text-align: center;
 
                         font-family: 'Bebas Neue', cursive;
-                        font-size: 25px;
+                        font-size:1.5rem;
+                        line-height: 1.3;
+                        letter-spacing: 0.005em;
                         border-bottom: black 4px solid;
                         background-color: #CEF4AE;
                         color: black;
                     }
                     .contentNews{
-                        padding-inline: 5%;
+                        padding-inline: 1.2rem 1.5rem;
                         .subTitleNews{
                             text-align: left;
                             font-family: 'Bebas Neue', cursive;
@@ -122,7 +139,7 @@
                     margin: 5%;
                     text-align: left;
                     .newsTitle{
-                        padding-inline: 5%;
+                        padding-inline: 1.2rem 1.5rem;
                         font-family: 'Bebas Neue', cursive;
                         font-size: 25px;
                         border-bottom: black 4px solid;
@@ -130,7 +147,7 @@
                         color: black;
                     }
                     .contentNews{
-                        padding-inline: 5%;
+                        padding-inline: 1.2rem 1.5rem;
                         .subTitleNews{
                             text-align: left;
                             font-family: 'Bebas Neue', cursive;
