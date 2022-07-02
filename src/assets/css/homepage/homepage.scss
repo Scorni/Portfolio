@@ -1,3 +1,21 @@
+@mixin devices($breakpoint){
+    @if $breakpoint == laptop {
+        @media only screen and (min-width: 1260px) {
+            @content
+        }
+    };
+    @if $breakpoint == tablet {
+        @media only screen and (max-width: 1024px) {
+            @content
+        }
+    };
+    @if $breakpoint == mobile {
+        @media only screen and (max-width: 481px) {
+          @content;
+        }
+    }
+}
+
 .homepage{
     margin: 0 auto;
     text-align: center;
@@ -71,15 +89,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
-            @media screen and (max-width: 1200px) {
-                flex-direction: column-reverse;
-
-            }
-            @media screen and (min-width: 1200px) {
+            @include devices(laptop) {
                 flex-direction: row;
-
+                // code set for tablet
             }
+            @include devices(tablet) {
+                flex-direction: column-reverse;
+                // code set for tablet
+            }
+            @include devices(mobile) {
+                flex-direction: column-reverse;
+                // code set for tablet
+            }
+            
             .informations{
                 p{
                     margin: 5%;
@@ -92,14 +114,19 @@
               
             }
             .news{
-                @media screen and (max-width: 1200px) {
-                    flex-direction: column;
-                    margin: auto 0;
-                }
-                @media screen and (min-width: 1200px) {
+                @include devices(laptop) {
                     flex-direction: row;
-                    width: 70rem;
+                    // width: 90rem;
 
+                    // code set for tablet
+                }
+                @include devices(tablet) {
+                    flex-direction: column;
+                    // code set for tablet
+                }
+                @include devices(mobile) {
+                    flex-direction: column;
+                    // code set for tablet
                 }
                 display: flex;
                 justify-content: center;

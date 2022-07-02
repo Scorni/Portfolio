@@ -49,7 +49,49 @@
   width: auto;
 }
 
-.about .formation .first {
+.about .formation .birth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (min-width: 1024px) {
+  .about .formation .birth {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about .formation .birth {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .about .formation .birth {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+.about .formation .birth .first {
+  position: relative;
   padding: 4rem 1.5rem 4.75rem;
   border-block: black 2px solid;
   background-color: #BED3C3;
@@ -58,14 +100,32 @@
   color: #000000;
 }
 
-.about .formation .first h2 {
+@media only screen and (min-width: 1024px) {
+  .about .formation .birth .first {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about .formation .birth .first {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .about .formation .birth .first {
+    width: auto;
+  }
+}
+
+.about .formation .birth .first h2 {
   text-align: center;
   font-family: 'Mabry pro', sans-serif;
   font-weight: 300;
 }
 
-.about .formation .first p {
-  text-align: center;
+.about .formation .birth .first p {
+  margin: auto;
   font-size: 1.188rem;
   font-weight: normal;
   font-family: 'Mabry pro', sans-serif;
@@ -73,8 +133,9 @@
   letter-spacing: 0.005em;
 }
 
-.about .formation .first .cake {
-  left: 35vh;
+.about .formation .birth .first .cake {
+  left: 90%;
+  position: absolute;
   top: -50px;
   position: fixed;
   -webkit-transform-origin: center;
@@ -91,28 +152,82 @@
           animation: swing 3s linear infinite alternate;
 }
 
-.about .formation .study {
-  background-color: #FFDCAB;
-  z-index: -1;
-  width: auto;
+.about .formation .school {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.about .formation .second {
+@media only screen and (min-width: 1024px) {
+  .about .formation .school {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about .formation .school {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .about .formation .school {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+.about .formation .school .second {
   padding: 4rem 1.5rem 4.75rem;
-  border-block: black 2px solid;
   background-color: #EBACA2;
   background-repeat: no-repeat;
   background-position: right bottom;
   color: #000000;
 }
 
-.about .formation .second h2 {
+@media only screen and (min-width: 1024px) {
+  .about .formation .school .second {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about .formation .school .second {
+    width: auto;
+    border-block: black 2px solid;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .about .formation .school .second {
+    width: auto;
+    border-block: black 2px solid;
+  }
+}
+
+.about .formation .school .second h2 {
   text-align: left;
   font-family: 'Mabry pro', sans-serif;
   font-weight: 300;
 }
 
-.about .formation .second p {
+.about .formation .school .second p {
   text-align: left;
   font-size: 1.188rem;
   font-weight: normal;
@@ -121,9 +236,8 @@
   letter-spacing: 0.005em;
 }
 
-.about .formation .second .javascript {
+.about .formation .school .second .javascript {
   text-align: left;
-  left: 5vh;
   position: fixed;
   -webkit-transform-origin: center;
           transform-origin: center;
@@ -137,9 +251,26 @@
           animation: swing 3s linear infinite alternate;
 }
 
-.about .formation .second .php {
+@media only screen and (min-width: 1024px) {
+  .about .formation .school .second .javascript {
+    left: 90%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about .formation .school .second .javascript {
+    left: 80%;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .about .formation .school .second .javascript {
+    left: 80%;
+  }
+}
+
+.about .formation .school .second .php {
   text-align: left;
-  left: 25vh;
   position: fixed;
   -webkit-transform-origin: center;
           transform-origin: center;
@@ -153,22 +284,135 @@
           animation: swing 2s linear infinite alternate;
 }
 
-.about .formation .third {
+@media only screen and (min-width: 1024px) {
+  .about .formation .school .second .php {
+    left: 30%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about .formation .school .second .php {
+    left: 60%;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .about .formation .school .second .php {
+    left: 60%;
+  }
+}
+
+.about .formation .school .study {
+  background-color: #FFDCAB;
+  z-index: -1;
+}
+
+@media only screen and (min-width: 1024px) {
+  .about .formation .school .study {
+    width: 60%;
+    border-left: black 2px solid;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about .formation .school .study {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .about .formation .school .study {
+    width: auto;
+  }
+}
+
+.about .formation .atm {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (min-width: 1024px) {
+  .about .formation .atm {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about .formation .atm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .about .formation .atm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+}
+
+.about .formation .atm .third {
+  position: relative;
+  z-index: 0;
   padding: 4rem 1.5rem 4.75rem;
-  border-block: black 2px solid;
+  border-top: black 2px solid;
   background-color: #CE6A6B;
   background-repeat: no-repeat;
   background-position: right bottom;
   color: #000000;
 }
 
-.about .formation .third h2 {
+@media only screen and (min-width: 1024px) {
+  .about .formation .atm .third {
+    width: 100%;
+    border-left: black 2px solid;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about .formation .atm .third {
+    width: auto;
+    border-block: black 2px solid;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .about .formation .atm .third {
+    width: auto;
+    border-block: black 2px solid;
+  }
+}
+
+.about .formation .atm .third h2 {
   text-align: left;
   font-family: 'Mabry pro', sans-serif;
   font-weight: 300;
 }
 
-.about .formation .third p {
+.about .formation .atm .third h3 {
+  text-align: center;
+  font-family: 'Mabry pro', sans-serif;
+  font-weight: 300;
+}
+
+.about .formation .atm .third p {
   text-align: left;
   font-size: 1.188rem;
   font-weight: normal;
@@ -177,77 +421,72 @@
   letter-spacing: 0.005em;
 }
 
-.about .formation .workingAtHome {
+.about .formation .atm .third .css-button-retro--green {
+  vertical-align: middle;
+  text-align: center;
+  top: 1.5rem;
+  min-width: 20%;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  font-family: 'Mabry pro', sans-serif;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 2px solid #000;
+  color: #000;
+  background: transparent;
+}
+
+.about .formation .atm .third .css-button-retro--green .contactMe {
+  text-decoration: none;
+  color: #000;
+}
+
+.about .formation .atm .third .css-button-retro--green:hover:after {
+  top: 0;
+  left: 0;
+}
+
+.about .formation .atm .third .css-button-retro--green:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  background-color: #80ed99;
+}
+
+.about .formation .atm .workingAtHome {
   background-color: #FFDCAB;
   z-index: -1;
-  width: auto;
 }
 
-.about .formation .contactMe {
-  position: absolute;
-  margin: auto;
-  width: 18rem;
-  padding: 1.2rem 1.5rem;
-  font-family: 'Mabry pro', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.3;
-  letter-spacing: 0.005em;
-  border: black 4px solid;
-  background-color: #000000;
-  color: white;
-  text-decoration: none;
-  -webkit-animation: first 3s linear infinite alternate;
-          animation: first 3s linear infinite alternate;
-  padding-inline: 0px;
-  z-index: 2;
+@media only screen and (min-width: 1024px) {
+  .about .formation .atm .workingAtHome {
+    width: 40%;
+    border-top: black 2px solid;
+  }
 }
 
-.about .formation .triple:hover .contactMe {
-  -webkit-transform: translate3d(-1rem, -1rem, 0px);
-          transform: translate3d(-1rem, -1rem, 0px);
+@media only screen and (max-width: 1024px) {
+  .about .formation .atm .workingAtHome {
+    width: auto;
+  }
 }
 
-.about .formation .triple:hover .shadowOne {
-  -webkit-transform: translate3d(-0.5rem, -0.5rem, 0px);
-          transform: translate3d(-0.5rem, -0.5rem, 0px);
-}
-
-.about .formation .shadowOne {
-  position: absolute;
-  margin: auto;
-  width: 18rem;
-  padding: 1.2rem 1.5rem;
-  font-family: 'Mabry pro', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.3;
-  letter-spacing: 0.005em;
-  border: black 4px solid;
-  background-color: #212E53;
-  color: white;
-  text-decoration: none;
-  -webkit-animation: first 3s linear infinite alternate;
-          animation: first 3s linear infinite alternate;
-  padding-inline: 0px;
-  z-index: 1;
-}
-
-.about .formation .shadowTwo {
-  position: absolute;
-  margin: auto;
-  width: 18rem;
-  padding: 1.2rem 1.5rem;
-  font-family: 'Mabry pro', sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.3;
-  letter-spacing: 0.005em;
-  border: black 4px solid;
-  background-color: #4A919E;
-  color: white;
-  text-decoration: none;
-  -webkit-animation: first 3s linear infinite alternate;
-          animation: first 3s linear infinite alternate;
-  padding-inline: 0px;
-  z-index: 0;
+@media only screen and (max-width: 481px) {
+  .about .formation .atm .workingAtHome {
+    width: auto;
+  }
 }
 
 @-webkit-keyframes blink {
