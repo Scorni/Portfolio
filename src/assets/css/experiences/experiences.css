@@ -80,6 +80,15 @@ main .professionnal .stage, main .professionnal .wecodx, main .professionnal .ul
   margin: 5%;
   background-color: #d4ffea;
   border: 1px solid black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main .professionnal .stage:hover, main .professionnal .wecodx:hover, main .professionnal .uliege:hover, main .professionnal .hrorganizer:hover {
+  -webkit-box-shadow: 5px 5px 0px black;
+          box-shadow: 5px 5px 0px black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 main .personnal {
@@ -127,7 +136,7 @@ main .personnal .description p {
   margin-inline: 15%;
 }
 
-main .personnal .sideProject {
+main .personnal .sideProject .firstRow {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,7 +146,7 @@ main .personnal .sideProject {
 }
 
 @media only screen and (min-width: 1024px) {
-  main .personnal .sideProject {
+  main .personnal .sideProject .firstRow {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -146,7 +155,7 @@ main .personnal .sideProject {
 }
 
 @media only screen and (max-width: 1024px) {
-  main .personnal .sideProject {
+  main .personnal .sideProject .firstRow {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -155,7 +164,43 @@ main .personnal .sideProject {
 }
 
 @media only screen and (max-width: 481px) {
-  main .personnal .sideProject {
+  main .personnal .sideProject .firstRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .personnal .sideProject .WIPRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  main .personnal .sideProject .WIPRow {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main .personnal .sideProject .WIPRow {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  main .personnal .sideProject .WIPRow {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -189,5 +234,36 @@ main .personnal .quizz:hover, main .personnal .weather:hover {
           box-shadow: 5px 5px 0px black;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+main .personnal .quizz .quizzPreview {
+  width: 100%;
+}
+
+main .personnal .weather .weatherPreview {
+  width: 100%;
+  -webkit-filter: blur(1.4px);
+          filter: blur(1.4px);
+}
+
+main .personnal .WIPProject {
+  text-align: center;
+  margin: 5% auto;
+  width: 35%;
+  background-color: white;
+  border: 1px solid black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main .personnal .WIPProject h4 {
+  width: auto;
+  border-top: 1px  solid black;
+  padding-top: 5%;
+}
+
+main .personnal .WIPProject p {
+  border-top: 1px solid black;
+  padding-top: 5%;
 }
 /*# sourceMappingURL=experiences.css.map */

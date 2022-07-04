@@ -65,6 +65,13 @@ main{
             margin: 5%;
             background-color: #d4ffea;
             border: 1px solid black;
+            // box-shadow: 5px 5px 0px rgb(0, 0, 0);
+            transition: 0.2s;
+
+        }
+        .stage:hover,.wecodx:hover,.uliege:hover,.hrorganizer:hover{
+            box-shadow: 5px 5px 0px rgb(0, 0, 0);
+            transition: 0.2s;
         }
         
     }
@@ -102,21 +109,31 @@ main{
             }
         }
         .sideProject{
-            display: flex;
-            justify-content: center;
-            @include devices(laptop) {
-                
-                flex-direction: row;
-
-
+            .firstRow{
+                display: flex;
+                justify-content: center;
+                @include devices(laptop) {
+                    flex-direction: row;
+                }
+                @include devices(tablet) {
+                    flex-direction: column;
+                }
+                @include devices(mobile) {
+                    flex-direction: column;
+                }
             }
-            @include devices(tablet) {
-                flex-direction: column;
-
-
-            }
-            @include devices(mobile) {
-                flex-direction: column;
+            .WIPRow{
+                display: flex;
+                justify-content: center;
+                @include devices(laptop) {
+                    flex-direction: row;
+                }
+                @include devices(tablet) {
+                    flex-direction: column;
+                }
+                @include devices(mobile) {
+                    flex-direction: column;
+                }
             }
         }
         .quizz,.weather{
@@ -143,6 +160,37 @@ main{
         .quizz:hover,.weather:hover{
             box-shadow: 5px 5px 0px rgb(0, 0, 0);
             transition: 0.2s;
+        }
+        .quizz{
+            .quizzPreview{
+                width: 100%;
+                // filter: blur(1.4px); 
+            }
+        }
+        .weather{
+            .weatherPreview{
+                width: 100%;
+                filter: blur(1.4px); 
+            }
+        }
+        .WIPProject{
+            text-align: center;
+            margin: 5% auto;
+            width: 35%;
+            background-color: white;
+            border: 1px solid black;
+            transition: 0.2s;
+            h4{
+                width: auto;
+                border-top: 1px  solid black;
+                padding-top: 5%;
+
+            }
+            p{
+                border-top: 1px solid black;
+                padding-top: 5%;
+
+            }
         }
     }
 }
