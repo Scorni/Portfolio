@@ -140,9 +140,19 @@
 }
 
 .homepage .body .side .informations p {
-  margin: 5%;
-  width: 20rem;
+  margin: 10%;
+  padding: 5%;
+  -webkit-box-shadow: 5px 5px 0px black;
+          box-shadow: 5px 5px 0px black;
   padding-inline: 1.2rem 1.5rem;
+  background-color: #EBB0F6;
+  border: #000000 solid 2px;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  font-family: 'Mabry pro', sans-serif;
+  color: #000000;
+  line-height: 1.4;
+  letter-spacing: 0.005em;
 }
 
 .homepage .body .side .news {

@@ -26,7 +26,8 @@
     
     .profile{
         margin: 0 auto;
-        
+        animation:scale-up-center 0.4s;
+
         .lines{
             width: 50px;
             animation: blink 1s steps(2, start) infinite;
@@ -52,7 +53,7 @@
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        
+
         margin: 0%;
         width: auto;
         .birth{
@@ -126,7 +127,7 @@
         }
         .school{
             display: flex;
-            
+
             @include devices(laptop) {
                 flex-direction: row;
             }
@@ -141,6 +142,7 @@
                 text-align: center;
             }
             .second{
+
                 @include devices(laptop) {
                     width: 100%;
                 }
@@ -237,7 +239,7 @@
         .atm{
             position: relative;
             display: flex;
-            
+
             @include devices(laptop) {
                 flex-direction: row-reverse;
             }
@@ -381,7 +383,14 @@
         transform:  rotate(5deg);
     }
 }
+@keyframes scale-up-center{
 
-@keyframes triple{
-
+    0%{
+        transform:scale(.5)
+        
+    }
+    
+    100%{
+        transform:scale(1)
+    } 
 }

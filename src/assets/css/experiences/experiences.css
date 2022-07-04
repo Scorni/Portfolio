@@ -1,1 +1,193 @@
-/* No CSS *//*# sourceMappingURL=experiences.css.map */
+main {
+  font-size: 1.188rem;
+  font-weight: normal;
+  font-family: 'Mabry pro', sans-serif;
+  line-height: 1.4;
+  letter-spacing: 0.005em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .professionnal {
+  background-color: #ffd4e5;
+}
+
+@media only screen and (min-width: 1024px) {
+  main .professionnal {
+    width: 50%;
+    border-block: black 2px solid;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main .professionnal {
+    width: auto;
+    border-top: black 2px solid;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  main .professionnal {
+    width: auto;
+    border-top: black 2px solid;
+  }
+}
+
+main .professionnal h2, main .professionnal h3 {
+  text-align: center;
+  margin-inline: 5%;
+  padding-top: 5%;
+}
+
+main .professionnal p {
+  text-align: center;
+  margin-inline: 15%;
+}
+
+main .professionnal .stage, main .professionnal .wecodx, main .professionnal .uliege, main .professionnal .hrorganizer {
+  margin: 5%;
+  background-color: #d4ffea;
+  border: 1px solid black;
+}
+
+main .personnal {
+  background-color: #feffa3;
+}
+
+@media only screen and (min-width: 1024px) {
+  main .personnal {
+    width: 50%;
+    border-left: black 2px solid;
+    border-block: black 2px solid;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main .personnal {
+    width: auto;
+    border-top: black 2px solid;
+    border-block: black 2px solid;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  main .personnal {
+    width: auto;
+    border-top: black 2px solid;
+    border-block: black 2px solid;
+  }
+}
+
+main .personnal .headTitle {
+  text-align: center;
+  margin-inline: 5%;
+  padding-top: 5%;
+}
+
+main .personnal .description h2, main .personnal .description h3 {
+  text-align: center;
+  margin-inline: 5%;
+  padding-top: 5%;
+}
+
+main .personnal .description p {
+  text-align: center;
+  margin-inline: 15%;
+}
+
+main .personnal .sideProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  main .personnal .sideProject {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main .personnal .sideProject {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  main .personnal .sideProject {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .personnal .quizz, main .personnal .weather {
+  text-align: center;
+  margin: 5% auto;
+  width: 35%;
+  background-color: white;
+  border: 1px solid black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main .personnal .quizz h4, main .personnal .weather h4 {
+  width: auto;
+  border-top: 1px  solid black;
+  padding-top: 5%;
+}
+
+main .personnal .quizz p, main .personnal .weather p {
+  border-top: 1px solid black;
+  padding-top: 5%;
+}
+
+main .personnal .quizz:hover, main .personnal .weather:hover {
+  -webkit-box-shadow: 5px 5px 0px black;
+          box-shadow: 5px 5px 0px black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+/*# sourceMappingURL=experiences.css.map */

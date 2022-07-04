@@ -25,27 +25,26 @@ export default function homepage() {
       <div className="side">
         <div className="informations">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            Here are my two latest personnal projects,<br></br> You can find as much of tiny projects that took me less than one day as
+            bigger projects than bring my brain to tears.
           </p>
         </div>
         <div className="separator">
         </div>
         <div className="news">
           <div className="first">
-            <p className="newsTitle">News</p>
+            <p className="newsTitle">Quizz Game</p>
             <div className="contentNews">
               <p>07/06/2022</p>
-              <p className="subTitleNews">This has been launch on Today</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.. Read More</p>
+              <p className="subTitleNews">what a game for nerd people !</p>
+              <p>Are you sure you know your tech's basics ? Check your level of knowledge <a href='/'>Here</a> </p>
             </div>
           </div>
           <div className="second">
-            <p className="newsTitle">News</p>
+            <p className="newsTitle">Weather</p>
             <div className="contentNews">
               <p>07/06/2022</p>
-              <p className="subTitleNews">This has been launch on Today</p>
+              <p className="subTitleNews">Is it a good day today ?</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.. Read More</p>
             </div>
             </div>

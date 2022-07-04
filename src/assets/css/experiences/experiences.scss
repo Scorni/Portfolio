@@ -1,0 +1,149 @@
+@mixin devices($breakpoint){
+    @if $breakpoint == laptop {
+        @media only screen and (min-width: 1024px) {
+            @content
+        }
+    };
+    @if $breakpoint == tablet {
+        @media only screen and (max-width: 1024px) {
+            @content
+        }
+    };
+    @if $breakpoint == mobile {
+        @media only screen and (max-width: 481px) {
+          @content;
+        }
+    }
+}
+main{
+    font-size: 1.188rem;
+    font-weight: normal;   
+    font-family: 'Mabry pro', sans-serif;
+    line-height: 1.4;
+    letter-spacing: 0.005em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @include devices(laptop) {
+        flex-direction: row;
+    }
+    @include devices(tablet) {
+        flex-direction: column;
+    }
+    @include devices(mobile) {
+        flex-direction: column;
+    }
+    .professionnal{
+        @include devices(laptop) {
+            width: 50%;
+            border-block: black 2px solid;
+
+        }
+        @include devices(tablet) {
+            width: auto;
+            border-top: black 2px solid;
+
+        }
+        @include devices(mobile) {
+            width: auto;
+            border-top: black 2px solid;
+
+        }
+        background-color: #ffd4e5;
+        h2,h3{
+            text-align: center;
+            margin-inline: 5%;
+            padding-top: 5%;
+
+        }
+        p{
+            text-align: center;
+            margin-inline: 15%;
+        }
+        .stage,.wecodx,.uliege,.hrorganizer{
+            margin: 5%;
+            background-color: #d4ffea;
+            border: 1px solid black;
+        }
+        
+    }
+    .personnal{
+        @include devices(laptop) {
+            width: 50%;
+            border-left: black 2px solid;
+            border-block: black 2px solid;
+        }
+        @include devices(tablet) {
+            width: auto;
+            border-top: black 2px solid;
+            border-block: black 2px solid;
+        }
+        @include devices(mobile) {
+            width: auto;
+            border-top: black 2px solid;
+            border-block: black 2px solid;
+        }
+        background-color: #feffa3;
+        .headTitle{
+            text-align: center;
+            margin-inline: 5%;
+            padding-top: 5%;
+        }
+        .description{
+            h2,h3{
+                text-align: center;
+                margin-inline: 5%;
+                padding-top: 5%;
+            }
+            p{
+                text-align: center;
+                margin-inline: 15%;
+            }
+        }
+        .sideProject{
+            display: flex;
+            justify-content: center;
+            @include devices(laptop) {
+                
+                flex-direction: row;
+
+
+            }
+            @include devices(tablet) {
+                flex-direction: column;
+
+
+            }
+            @include devices(mobile) {
+                flex-direction: column;
+            }
+        }
+        .quizz,.weather{
+            text-align: center;
+            margin: 5% auto;
+            width: 35%;
+            background-color: white;
+            border: 1px solid black;
+            transition: 0.2s;
+
+            // box-shadow: 5px 5px 0px rgb(0, 0, 0);
+            h4{
+                width: auto;
+                border-top: 1px  solid black;
+                padding-top: 5%;
+
+            }
+            p{
+                border-top: 1px solid black;
+                padding-top: 5%;
+
+            }
+        }
+        .quizz:hover,.weather:hover{
+            box-shadow: 5px 5px 0px rgb(0, 0, 0);
+            transition: 0.2s;
+        }
+    }
+}
+
