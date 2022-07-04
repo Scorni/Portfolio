@@ -138,6 +138,15 @@
                 justify-content: center;
 
                 .first{
+                    @include devices(laptop) {
+                        width:50% ;
+                    }
+                    @include devices(tablet) {
+                        width:50% ;
+                    }
+                    @include devices(mobile) {
+                        width:50% ;
+                    }
                     margin: 5%;
                     text-align: left;
                     .newsTitle{
@@ -169,6 +178,15 @@
                     box-shadow: 5px 5px 0px rgb(0, 0, 0);
                 }
                 .second{
+                    @include devices(laptop) {
+                        width:50% ;
+                    }
+                    @include devices(tablet) {
+                        width:50% ;
+                    }
+                    @include devices(mobile) {
+                        width:50% ;
+                    }
                     margin: 5%;
                     text-align: left;
                     .newsTitle{

@@ -37,7 +37,7 @@ export default function homepage() {
             <div className="contentNews">
               <p>07/06/2022</p>
               <p className="subTitleNews">what a game for nerd people !</p>
-              <p>Are you sure you know your tech's basics ? Check your level of knowledge <a href='/'>Here</a> </p>
+              <p>Are you sure you know your tech's basics ? Check your level of knowledge <a href='https://scorni-usbe-aters-quizz.vercel.app' target={'_blank'}>Here</a> </p>
             </div>
           </div>
           <div className="second">
@@ -45,7 +45,7 @@ export default function homepage() {
             <div className="contentNews">
               <p>07/06/2022</p>
               <p className="subTitleNews">Is it a good day today ?</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.. Read More</p>
+              <p>Wanna see if your city will let you deshydrated ? Go for <a href='https://scorni.github.io/Weather/' target={'_blank'}>it</a>!</p>
             </div>
             </div>
         </div>
