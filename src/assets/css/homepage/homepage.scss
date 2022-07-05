@@ -140,14 +140,18 @@
                 .first{
                     @include devices(laptop) {
                         width:50% ;
+                        margin: 5%  ;
+
                     }
                     @include devices(tablet) {
-                        width:50% ;
+                        width:auto ;
+                        margin: 5%  ;
                     }
                     @include devices(mobile) {
-                        width:50% ;
+                        width:auto ;
+                        margin: 5% ;
                     }
-                    margin: 5%;
+                    // margin: 5%;
                     text-align: left;
                     .newsTitle{
                         padding-inline: 1.2rem 1.5rem;
@@ -180,14 +184,18 @@
                 .second{
                     @include devices(laptop) {
                         width:50% ;
+                        margin: 5%  ;
+
                     }
                     @include devices(tablet) {
-                        width:50% ;
+                        width:auto ;
+                        margin: 5% ;
                     }
                     @include devices(mobile) {
-                        width:50% ;
+                        width:auto ;
+                        margin: 5% ;
                     }
-                    margin: 5%;
+                    // margin: 5%;
                     text-align: left;
                     .newsTitle{
                         padding-inline: 1.2rem 1.5rem;

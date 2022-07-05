@@ -1,0 +1,130 @@
+main {
+  font-size: 1.188rem;
+  font-weight: normal;
+  font-family: 'Mabry pro', sans-serif;
+  line-height: 1.4;
+  letter-spacing: 0.005em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .contactText {
+  background-color: #dbdcff;
+  border: 1px solid black;
+}
+
+@media only screen and (min-width: 1024px) {
+  main .contactText {
+    width: 50%;
+    padding: 5%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main .contactText {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  main .contactText {
+    width: auto;
+  }
+}
+
+main .contactForm {
+  background-color: #eecbff;
+  border: 1px solid black;
+}
+
+@media only screen and (min-width: 1024px) {
+  main .contactForm {
+    width: 50%;
+    padding: 5%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main .contactForm {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  main .contactForm {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  main .contactForm .names {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main .contactForm .names {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  main .contactForm .names {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+main .contactForm .names .nameLabel, main .contactForm .names .firstNameLabel {
+  width: 15%;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+main .contactForm .emailLabel, main .contactForm .questionLabel {
+  display: inline-block;
+  width: 30%;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+/*# sourceMappingURL=contact.css.map */

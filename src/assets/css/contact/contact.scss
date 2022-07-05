@@ -1,0 +1,96 @@
+@mixin devices($breakpoint){
+    @if $breakpoint == laptop {
+        @media only screen and (min-width: 1024px) {
+            @content
+        }
+    };
+    @if $breakpoint == tablet {
+        @media only screen and (max-width: 1024px) {
+            @content
+        }
+    };
+    @if $breakpoint == mobile {
+        @media only screen and (max-width: 481px) {
+          @content;
+        }
+    }
+}
+main{
+    font-size: 1.188rem;
+    font-weight: normal;   
+    font-family: 'Mabry pro', sans-serif;
+    line-height: 1.4;
+    letter-spacing: 0.005em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @include devices(laptop) {
+        flex-direction: row;
+    }
+    @include devices(tablet) {
+        flex-direction: column;
+    }
+    @include devices(mobile) {
+        flex-direction: column;
+    }
+    .contactText{
+        @include devices(laptop) {
+            width: 50%;
+            padding: 5%;
+
+        }
+        @include devices(tablet) {
+            width: auto;
+
+        }
+        @include devices(mobile) {
+            width: auto;
+
+        }
+        background-color: #dbdcff;
+        border: 1px solid black;
+
+    }
+    .contactForm{
+        @include devices(laptop) {
+            width: 50%;
+            padding:  5%;
+        }
+        @include devices(tablet) {
+            width: auto;
+
+        }
+        @include devices(mobile) {
+            width: auto;
+
+        }
+        background-color: #eecbff;
+        border: 1px solid black;
+        .names{
+            @include devices(laptop) {
+                flex-direction: row;
+            }
+            @include devices(tablet) {
+                flex-direction: column;
+            }
+            @include devices(mobile) {
+                flex-direction: column;
+            }
+            .nameLabel, .firstNameLabel {
+                // display:inline-block;
+                width: 15%;
+                padding: 0.5rem;
+                margin-right: 0.5rem;
+            } 
+        }
+        
+        .emailLabel, .questionLabel{
+            display:inline-block;
+            width: 30%;
+            padding: 0.5rem;
+            margin-right: 0.5rem;
+        }
+    }
+
+}

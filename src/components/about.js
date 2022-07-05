@@ -15,14 +15,16 @@ import { Slide, Fade}  from 'react-reveal';
 export default function About() {
  return (
     <div className="about">
-        <div className="profile">
-            <div className="lines">
-                <Lines />
+        <Fade>
+            <div className="profile">
+                    <div className="lines">
+                        <Lines />
+                    </div>
+                    <div className="bubble">
+                        <img src={picture} alt="test" className="me" />
+                    </div>
             </div>
-            <div className="bubble">
-                <img src={picture} alt="test" className="me" />
-            </div>
-        </div>
+        </Fade>
         <main className="formation">
             <Fade>
                 <section className="birth">

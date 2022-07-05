@@ -3,7 +3,7 @@ import previewWeather from "../assets/img/experiences/weatherApp.PNG"
 import previewQuizz from "../assets/img/experiences/quizzApp.PNG"
 import { Slide, Fade}  from 'react-reveal';
 
-
+// TODO: add skill vuejs reactjs 
 export default function Experiences() {
     return(
         <main>
@@ -39,7 +39,7 @@ export default function Experiences() {
                             Was the wrong way choosen !
                         </p>
                     </div>
-                    <div className="hrorganizer">
+                    {/* <div className="hrorganizer">
                         <h3>
                             Fullstack developper at HrOrganizer. <br/>
                             Avril-may  2022
@@ -48,7 +48,7 @@ export default function Experiences() {
                             Developping with PHP under symfony environment. <br/>
                             Frontend was held by Vue | Twig.                     
                         </p>
-                    </div>
+                    </div> */}
                 </section>
             </Slide>
             <Slide right>
@@ -67,43 +67,46 @@ export default function Experiences() {
                         <div className="sideProject">
                             <div className='firstRow'>
                                 <div className="quizz">
-                                    <img className='quizzPreview' src={previewQuizz}></img>
                                     <a href='https://scorni-usbe-aters-quizz.vercel.app' target={'_blank'}>
-                                        <h4>
-                                            Nerd quizz game
-                                        </h4>
+
+                                        <img className='quizzPreview' src={previewQuizz}></img>
+                                            <h4>
+                                                Nerd quizz game
+                                            </h4>
+                                        
+                                        <p className='date'>
+                                            03/06/2022
+                                        </p>
                                     </a>
-                                    
-                                    <p className='date'>
-                                        03/06/2022
-                                    </p>
+
                                 </div>
                                 <div className="weather">
-                                    <img className='weatherPreview' src={previewWeather}></img>
                                     <a href='https://scorni.github.io/Weather/' target={'_blank'}>
-                                        <h4>
-                                            Weather app
-                                        </h4>
+                                        <img className='weatherPreview' src={previewWeather}></img>
+                                            <h4>
+                                                Weather app
+                                            </h4>
+                                        
+                                        <p className='date'>
+                                            01/06/2022
+                                        </p>
                                     </a>
-                                    
-                                    <p className='date'>
-                                        01/06/2022
-                                    </p>
+
                                 </div>
                             </div>
                             <div className='WIPRow'>
                                 <div className='WIPProject'>
-                                    <img className='weatherPreview'></img>
-                                    <p> Work in Progress</p>
-                                    <a href='https://scorni.github.io/Weather/' target={'_blank'}>
+                                    <a href='https://youtu.be/dQw4w9WgXcQ' target={'_blank'}>
+                                        <p className="WIPText"> Work in Progress</p>
                                         <h4>
-                                            Want to see ?
+                                            Wanna see ?
                                         </h4>
+                                        
+                                        <p className='date'>
+                                            ??/??/????
+                                        </p>
                                     </a>
-                                    
-                                    <p className='date'>
-                                        ??/??/????
-                                    </p>
+
                                 </div>
                             </div>
                         </div>

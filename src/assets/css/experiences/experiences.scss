@@ -147,7 +147,7 @@ main{
             // box-shadow: 5px 5px 0px rgb(0, 0, 0);
             h4{
                 width: auto;
-                border-top: 1px  solid black;
+                // border-top: 1px  solid black;
                 padding-top: 5%;
 
             }
@@ -162,16 +162,29 @@ main{
             transition: 0.2s;
         }
         .quizz{
+            a{
+                text-decoration: none;
+                color: #000;
+            }
             .quizzPreview{
                 width: 100%;
-                // filter: blur(1.4px); 
+                border-bottom: 1px solid black;
             }
         }
         .weather{
+            a{
+                text-decoration: none;
+                color: #000;
+            }
             .weatherPreview{
                 width: 100%;
-                filter: blur(1.4px); 
+                border-bottom: 1px solid black;
             }
+        }
+        .WIPProject:hover{
+            box-shadow: 5px 5px 0px rgb(0, 0, 0);
+            transform: rotate(360deg);
+            transition: 1s;
         }
         .WIPProject{
             text-align: center;
@@ -179,18 +192,19 @@ main{
             width: 35%;
             background-color: white;
             border: 1px solid black;
-            transition: 0.2s;
+            transition: 1s;
+            a{
+                text-decoration: none;
+                color: #000;
+            }
             h4{
-                width: auto;
-                border-top: 1px  solid black;
-                padding-top: 5%;
-
+                border-block: 1px  solid black;
+                padding: 5%;
             }
-            p{
-                border-top: 1px solid black;
+            .WIPText{
                 padding-top: 5%;
-
             }
+            
         }
     }
 }
