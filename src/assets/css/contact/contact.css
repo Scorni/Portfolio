@@ -1,4 +1,4 @@
-main {
+.contact {
   font-size: 1.188rem;
   font-weight: normal;
   font-family: 'Mabry pro', sans-serif;
@@ -11,85 +11,12 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-@media only screen and (min-width: 1024px) {
-  main {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media only screen and (max-width: 481px) {
-  main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-main .contactText {
-  background-color: #dbdcff;
-  border: 1px solid black;
-}
-
-@media only screen and (min-width: 1024px) {
-  main .contactText {
-    width: 50%;
-    padding: 5%;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  main .contactText {
-    width: auto;
-  }
-}
-
-@media only screen and (max-width: 481px) {
-  main .contactText {
-    width: auto;
-  }
-}
-
-main .contactForm {
+  border-block: 2px solid black;
   background-color: #eecbff;
-  border: 1px solid black;
 }
 
-@media only screen and (min-width: 1024px) {
-  main .contactForm {
-    width: 50%;
-    padding: 5%;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  main .contactForm {
-    width: auto;
-  }
-}
-
-@media only screen and (max-width: 481px) {
-  main .contactForm {
-    width: auto;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  main .contactForm .names {
+@media only screen and (min-width: 1280px) {
+  .contact {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -97,8 +24,8 @@ main .contactForm {
   }
 }
 
-@media only screen and (max-width: 1024px) {
-  main .contactForm .names {
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+  .contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -106,8 +33,8 @@ main .contactForm {
   }
 }
 
-@media only screen and (max-width: 481px) {
-  main .contactForm .names {
+@media only screen and (max-width: 768px) {
+  .contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -115,16 +42,123 @@ main .contactForm {
   }
 }
 
-main .contactForm .names .nameLabel, main .contactForm .names .firstNameLabel {
-  width: 15%;
-  padding: 0.5rem;
-  margin-right: 0.5rem;
+@media only screen and (min-width: 1280px) {
+  .contact .contactText {
+    width: 50%;
+    height: 3rem;
+    padding: 5% 5% 15% 5%;
+    background: -webkit-gradient(linear, left top, right top, color-stop(30%, transparent), color-stop(30%, black), color-stop(70%, black), color-stop(70%, transparent)) 0 100%/100% 1px no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(30%, transparent), color-stop(30%, black), color-stop(70%, black), color-stop(70%, transparent)) 100% 0/1px 100% no-repeat;
+    background: linear-gradient(to right, transparent 30%, black 30%, black 70%, transparent 70%) 0 100%/100% 1px no-repeat, linear-gradient(to bottom, transparent 30%, black 30%, black 70%, transparent 70%) 100% 0/1px 100% no-repeat;
+  }
 }
 
-main .contactForm .emailLabel, main .contactForm .questionLabel {
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+  .contact .contactText {
+    width: auto;
+    padding: 5% 5% 5% 5%;
+    background: -webkit-gradient(linear, left top, right top, color-stop(30%, transparent), color-stop(30%, black), color-stop(70%, black), color-stop(70%, transparent)) 0 100%/100% 1px no-repeat;
+    background: linear-gradient(to right, transparent 30%, black 30%, black 70%, transparent 70%) 0 100%/100% 1px no-repeat;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact .contactText {
+    width: auto;
+    padding: 5% 5% 5% 5%;
+    background: -webkit-gradient(linear, left top, right top, color-stop(30%, transparent), color-stop(30%, black), color-stop(70%, black), color-stop(70%, transparent)) 0 100%/100% 1px no-repeat;
+    background: linear-gradient(to right, transparent 30%, black 30%, black 70%, transparent 70%) 0 100%/100% 1px no-repeat;
+  }
+}
+
+.contact .contactText h2 {
+  text-align: left;
+  font-weight: normal;
+  font-family: 'Mabry pro', sans-serif;
+  line-height: 1.4;
+  letter-spacing: 0.005em;
+}
+
+@media only screen and (min-width: 1280px) {
+  .contact .contactText h2 {
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+  .contact .contactText h2 {
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact .contactText h2 {
+    font-size: 3vw;
+  }
+}
+
+.contact .contactForm {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(65%, transparent), color-stop(65%, black), color-stop(90%, black), color-stop(90%, transparent)) 0 0/1px 100% no-repeat;
+  background: linear-gradient(to bottom, transparent 65%, black 65%, black 90%, transparent 90%) 0 0/1px 100% no-repeat;
+}
+
+@media only screen and (min-width: 1280px) {
+  .contact .contactForm {
+    width: 50%;
+    padding-top: 10%;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1279px) {
+  .contact .contactForm {
+    width: auto;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact .contactForm {
+    width: auto;
+  }
+}
+
+.contact .contactForm div {
+  padding-top: 5%;
+  padding-left: 5%;
+}
+
+.contact .contactForm label {
   display: inline-block;
+  float: left;
+  clear: left;
   width: 30%;
+  text-align: right;
   padding: 0.5rem;
-  margin-right: 0.5rem;
+}
+
+.contact .contactForm input, .contact .contactForm select, .contact .contactForm option, .contact .contactForm textarea {
+  border: 1px solid black;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 0px black;
+          box-shadow: 2px 2px 0px black;
+  padding: 0.55rem 1rem;
+  width: 35%;
+  font-size: 0.998rem;
+  font-weight: normal;
+  font-family: 'Mabry pro', sans-serif;
+  line-height: 1.4;
+  letter-spacing: 0.005em;
+}
+
+.contact .contactForm .questionTextArea {
+  display: inline-block;
+  float: left;
+  margin-bottom: 5px;
+  height: 80px;
+  width: 500px;
+}
+
+.contact .contactForm .submitQuestion {
+  margin-block: 3%;
+  width: 20%;
 }
 /*# sourceMappingURL=contact.css.map */
