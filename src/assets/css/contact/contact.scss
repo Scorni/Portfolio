@@ -120,11 +120,11 @@
             margin-bottom: 5px;
             height: 80px;
             width:  500px;
-
+            resize: vertical;
         }
         .submitQuestion{
             margin-block: 3%;
-            width: 20%;
+            max-width: 20%;
         }
     }
 }
