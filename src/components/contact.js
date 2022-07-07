@@ -32,7 +32,7 @@ export default function Arrow() {
                 <div className="subject">
                     <label for="subject" className="subjectLabel">Choose your subject</label>
                     <select className="subjectLabel" name="subjectLabel" id="pet-select">
-                        <option defaultValue="">-- Please choose your Subject --</option>
+                        <option defaultValue="">Please choose your Subject</option>
                         <option value="Design">Design</option>
                         <option value="Price">Price</option>
                         <option value="Website">Website</option>
