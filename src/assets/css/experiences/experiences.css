@@ -48,6 +48,7 @@ main .professionnal {
   main .professionnal {
     width: 50%;
     border-block: black 2px solid;
+    border-right: black 1px solid;
   }
 }
 
@@ -98,7 +99,7 @@ main .personnal {
 @media only screen and (min-width: 1024px) {
   main .personnal {
     width: 50%;
-    border-left: black 2px solid;
+    border-left: black 1px solid;
     border-block: black 2px solid;
   }
 }
@@ -134,6 +135,71 @@ main .personnal .description h2, main .personnal .description h3 {
 main .personnal .description p {
   text-align: center;
   margin-inline: 15%;
+}
+
+main .personnal .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  main .personnal .skills {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main .personnal .skills {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  main .personnal .skills {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+main .personnal .skills .first, main .personnal .skills .second {
+  background-color: white;
+  margin: auto 5%;
+}
+
+main .personnal .skills .first {
+  border: #000 solid 1px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main .personnal .skills .second {
+  border: #000 solid 1px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main .personnal .skills .react, main .personnal .skills .vue, main .personnal .skills .node, main .personnal .skills .figma {
+  margin-top: 5%;
+  padding-inline: 2rem;
+}
+
+main .personnal .skills .second:hover, main .personnal .skills .first:hover {
+  -webkit-box-shadow: 5px 5px 0px black;
+          box-shadow: 5px 5px 0px black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 main .personnal .sideProject .firstRow {

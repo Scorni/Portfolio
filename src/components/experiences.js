@@ -2,6 +2,10 @@ import '../assets/css/experiences/experiences.css';
 import previewWeather from "../assets/img/experiences/weatherApp.PNG"
 import previewQuizz from "../assets/img/experiences/quizzApp.PNG"
 import { Slide, Fade}  from 'react-reveal';
+import ReactSVG from '../assets/svg/experiences/reactSVG'
+import VueSVG from '../assets/svg/experiences/vueSVG'
+import NodeSVG from '../assets/svg/experiences/nodeSVG'
+import FigmaSVG from '../assets/svg/experiences/figmaSVG'
 
 // TODO: add skill vuejs reactjs 
 export default function Experiences() {
@@ -54,6 +58,34 @@ export default function Experiences() {
             <Slide right>
                 <section className="personnal">
                     <h2 className="headTitle">Personnal Projects and Skills</h2>
+                    <div className="description">
+                        <h3>
+                            Skills 
+                        </h3>
+                        <p>
+                            Those are some of the technologies that I use <br/>
+                        </p>
+                    </div>
+                    <div className='skills'>
+                        <div className='first'>
+                            <div className='react'>
+                                <NodeSVG />
+                            </div>
+                            <div className='vue'>
+                                <ReactSVG />
+                            </div>
+                        </div>
+                        <div className='second'>
+                            <div className='node'>
+                                <VueSVG />
+                            </div>
+                            <div className='figma'>
+                                <FigmaSVG />
+
+                            </div>
+                        </div>
+                        
+                    </div>
                     <div className="description">
                         <h3>
                             Currently learning UX | UI and Web Design 

@@ -38,7 +38,7 @@ main{
         @include devices(laptop) {
             width: 50%;
             border-block: black 2px solid;
-
+            border-right: black 1px solid ;
         }
         @include devices(tablet) {
             width: auto;
@@ -78,7 +78,7 @@ main{
     .personnal{
         @include devices(laptop) {
             width: 50%;
-            border-left: black 2px solid;
+            border-left: black 1px solid;
             border-block: black 2px solid;
         }
         @include devices(tablet) {
@@ -106,6 +106,42 @@ main{
             p{
                 text-align: center;
                 margin-inline: 15%;
+            }
+        }
+        .skills{
+            display: flex;
+            justify-content: center;
+            @include devices(laptop) {
+                flex-direction: row;
+            }
+            @include devices(tablet) {
+                flex-direction: row;
+            }
+            @include devices(mobile) {
+                flex-direction: row;
+            }
+            .first, .second{
+                background-color: rgb(255, 255, 255);
+                // border: #000 solid 1px;
+                margin:  auto 5%;
+            }
+            .first{
+                border: #000 solid 1px;
+                transition: 0.2s;
+
+            }
+            .second{
+                border: #000 solid 1px;
+                transition: 0.2s;
+
+            }
+            .react, .vue,.node, .figma{
+                margin-top: 5% ;
+                padding-inline: 2rem;
+            }
+            .second:hover,.first:hover{
+                box-shadow: 5px 5px 0px rgb(0, 0, 0);
+                transition: 0.2s;
             }
         }
         .sideProject{

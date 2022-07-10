@@ -53,7 +53,7 @@ export default function About() {
                         <p>
                             He learned and developped its I.T. skills at EPHEC,<br/> in the city of Louvain-La-Neuve. <br/>
                             He found that the thing he loved the most was coding in order to bring his imagination to life.<br/>
-                            Beginning with languages s uch as Javascript to the old man PHP.
+                            Beginning with languages such as Javascript to the old man PHP.
                         </p>
                         <div >
                             <Parallax translateY={['0px', '-20px','easeInOut']} scale= {[1, 1, 'easeInQuad']}  speed={-500}>
@@ -75,13 +75,15 @@ export default function About() {
                         <div className='third'>
                             <h2>At the moment</h2>
                             <p>
-                                During his free time he's learning evenly from UX | UI design to maintain database's structure. <br />
-                                He's looking after project to work on, as frontend or backend dev.
+                                He has learned from the past years to juggle with JS's frameworks such as React and Vue. <br/>
+                                He's available on any project that require design, front and back as a Freelancer, from the sketch to the last line of code ! <br />
+                                So he's obviously looking after project to go on !
+
                             </p>
                             <h3>
                                 Looking to build a new project ?
                             </h3>
-                            <NavLink className='contactMe' to="/hitme">
+                            <NavLink className='contactMe' to="/contact">
                                 <div className='css-button-retro--green'>
                                     Contact Me
                                 </div>
