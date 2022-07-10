@@ -6,6 +6,7 @@ import ReactSVG from '../assets/svg/experiences/reactSVG'
 import VueSVG from '../assets/svg/experiences/vueSVG'
 import NodeSVG from '../assets/svg/experiences/nodeSVG'
 import FigmaSVG from '../assets/svg/experiences/figmaSVG'
+import Computer from '../assets/svg/experiences/computer'
 
 // TODO: add skill vuejs reactjs 
 export default function Experiences() {
@@ -42,6 +43,9 @@ export default function Experiences() {
                         <p>
                             Was the wrong way choosen !
                         </p>
+                    </div>
+                    <div>
+                        <Computer/>
                     </div>
                     {/* <div className="hrorganizer">
                         <h3>
