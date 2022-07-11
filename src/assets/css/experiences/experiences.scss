@@ -136,8 +136,21 @@ main{
 
             }
             .react, .vue,.node, .figma{
-                margin-top: 5% ;
-                padding-inline: 2rem;
+                
+                display: flex;
+                justify-content: center;
+                @include devices(laptop) {
+                    margin-top: 5% ;
+                    padding-inline: 2rem;
+                }
+                @include devices(tablet) {
+                    margin-top: 5% ;
+                    // padding-inline: 2rem;
+                }
+                @include devices(mobile) {
+                    // margin-top: 5% ;
+                    // padding-inline: 2rem;
+                }
             }
             .second:hover,.first:hover{
                 box-shadow: 5px 5px 0px rgb(0, 0, 0);
@@ -188,6 +201,7 @@ main{
 
             }
             p{
+
                 border-top: 1px solid black;
                 padding-top: 5%;
 

@@ -191,8 +191,25 @@ main .personnal .skills .second {
 }
 
 main .personnal .skills .react, main .personnal .skills .vue, main .personnal .skills .node, main .personnal .skills .figma {
-  margin-top: 5%;
-  padding-inline: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  main .personnal .skills .react, main .personnal .skills .vue, main .personnal .skills .node, main .personnal .skills .figma {
+    margin-top: 5%;
+    padding-inline: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main .personnal .skills .react, main .personnal .skills .vue, main .personnal .skills .node, main .personnal .skills .figma {
+    margin-top: 5%;
+  }
 }
 
 main .personnal .skills .second:hover, main .personnal .skills .first:hover {

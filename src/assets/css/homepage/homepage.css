@@ -244,6 +244,16 @@
   color: black;
 }
 
+.homepage .body .side .news .first .contentNews .textNews {
+  margin-block: 20%;
+}
+
+.homepage .body .side .news .first .contentNews .quizzLink {
+  margin-left: 40%;
+  text-align: right;
+  color: black;
+}
+
 .homepage .body .side .news .second {
   text-align: left;
   border: black 4px solid;
@@ -292,6 +302,16 @@
   text-align: left;
   font-family: 'Bebas Neue', cursive;
   font-size: 30px;
+  color: black;
+}
+
+.homepage .body .side .news .second .contentNews .textNews {
+  margin-block: 20%;
+}
+
+.homepage .body .side .news .second .contentNews .weatherLink {
+  margin-left: 40%;
+  text-align: right;
   color: black;
 }
 
