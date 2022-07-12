@@ -1,11 +1,11 @@
 @mixin devices($breakpoint){
     @if $breakpoint == laptop {
-        @media only screen and (min-width: 1260px) {
+        @media only screen and (min-width: 1200px) {
             @content
         }
     };
     @if $breakpoint == tablet {
-        @media only screen and (max-width: 1024px) {
+        @media only screen and (max-width: 1199px) {
             @content
         }
     };
@@ -21,7 +21,6 @@
     text-align: center;
     
     .body{
-
         padding-inline: 5%;
         display: flex;
         flex-direction: column;
@@ -31,7 +30,6 @@
             justify-content: center;
             align-items: center;
             animation:scale-up-center 0.4s;
-
             .welcomeText{  
                 h1{
                     padding: 2%;
@@ -45,7 +43,6 @@
                     box-shadow: 5px 5px 0px rgb(0, 0, 0);
                 }
             }
-            // Media queries ?
             .book{
                 display: none;
             }
@@ -78,52 +75,11 @@
                 transform: rotateZ(-8deg) translateX(-50px);
                 animation: default_anim 3s linear infinite alternate;
                 padding-inline: 0px;
-                // @include key_frame("moving");
-
-                
             }
         }
         .side{
             animation:scale-up-center 0.4s;
             padding-block: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            @include devices(laptop) {
-                flex-direction: row;
-                // code set for tablet
-            }
-            @include devices(tablet) {
-                flex-direction: column-reverse;
-                // code set for tablet
-            }
-            @include devices(mobile) {
-                flex-direction: column-reverse;
-                // code set for tablet
-            }
-            
-            .informations{
-                p{
-                    @include devices(laptop) {
-    
-                        // code set for tablet
-                    }
-                    margin: 10%;
-                    padding: 5%;
-                    box-shadow: 5px 5px 0px rgb(0, 0, 0);
-
-                    padding-inline: 1.2rem 1.5rem;
-                    background-color:#EBB0F6;
-                    border: #000000 solid 2px;
-                    border-radius: 3px;
-                    font-size:1.5rem;
-                    font-family: 'Mabry pro', sans-serif;
-
-                    color: #000000;
-                    line-height: 1.4;
-                    letter-spacing: 0.005em;
-                }
-            }
             .news{
                 @include devices(laptop) {
                     flex-direction: row;
@@ -136,28 +92,54 @@
                 }
                 display: flex;
                 justify-content: center;
+                .informations{
+                    p{
+                        @include devices(laptop) {
+                            margin-top: 20%;
+                            width: auto;
+                        }
+                        @include devices(tablet) {
+                            margin: 5% auto;
+                            width: 70%;
 
+                        }
+                        @include devices(mobile) {
+                            margin:  5% auto;
+                            width: 70%;
+                        }
+                        padding: 5%;
+                        box-shadow: 5px 5px 0px rgb(0, 0, 0);
+                        padding-inline: 1.2rem 1.5rem;
+                        background-color:#EBB0F6;
+                        border: #000000 solid 2px;
+                        border-radius: 3px;
+                        font-size:1.5rem;
+                        font-family: 'Mabry pro', sans-serif;
+                        color: #000000;
+                        line-height: 1.4;
+                        letter-spacing: 0.005em;
+                    }
+                }
                 .first{
                     @include devices(laptop) {
-                        width:50% ;
+                        width:30% ;
                         margin: 5%  ;
+                        min-width: 300px;
 
                     }
                     @include devices(tablet) {
-                        width:auto ;
-                        margin: 5%  ;
+                        width:50% ;
+                        margin: 5% auto ;
+
                     }
                     @include devices(mobile) {
                         width:auto ;
+                        min-width: 50px;
                         margin: 5% ;
                     }
-                    // margin: 5%;
                     text-align: left;
                     .newsTitle{
                         padding-inline: 1.2rem 1.5rem;
-
-                        // text-align: center;
-
                         font-family: 'Bebas Neue', cursive;
                         font-size:1.5rem;
                         line-height: 1.3;
@@ -175,16 +157,22 @@
                             color: black;
                         }
                         .textNews{
-                            margin-block: 20% ;
+                            @include devices(laptop) {
+                                margin: 25% auto ;
+        
+                            }
+                            @include devices(tablet) {
+                                margin: 5% auto ;
+                            }
+                            @include devices(mobile) {
+                                margin: 5% auto ;
+                            }
                         }
                         .quizzLink{
-                            // padding: 80%;
-                            margin-left: 40%;
                             text-align: right;
                             color: black;
                         }
                     }
-                    
                     border: black 4px solid;
                     background-color: #ffffff;
                     color: black;
@@ -193,19 +181,18 @@
                 }
                 .second{
                     @include devices(laptop) {
-                        width:50% ;
+                        width:30% ;
                         margin: 5%  ;
-
+                        min-width: 300px;
                     }
                     @include devices(tablet) {
-                        width:auto ;
-                        margin: 5% ;
+                        width:50% ;
+                        margin: 5% auto ;
                     }
                     @include devices(mobile) {
                         width:auto ;
                         margin: 5% ;
                     }
-                    // margin: 5%;
                     text-align: left;
                     .newsTitle{
                         padding-inline: 1.2rem 1.5rem;
@@ -222,20 +209,23 @@
                             font-family: 'Bebas Neue', cursive;
                             font-size: 30px;
                             color: black;
-
                         }
                         .textNews{
-                            margin-block: 20% ;
-
+                            @include devices(laptop) {
+                                margin: 25% auto ;
+                            }
+                            @include devices(tablet) {
+                                margin: 5% auto ;
+                            }
+                            @include devices(mobile) {
+                                margin: 5% auto ;
+                            }
                         }
                         .weatherLink{
-                            // padding: 80%;
-                            margin-left: 40%;
                             text-align: right;
                             color: black;
                         }
                     }
-                    
                     border: black 4px solid;
                     background-color: #ffffff;
                     color: black;
