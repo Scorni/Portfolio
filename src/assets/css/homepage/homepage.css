@@ -232,7 +232,7 @@
 
 @media only screen and (min-width: 1200px) {
   .homepage .body .side .news .first .contentNews .textNews {
-    margin: 25% auto;
+    margin: 10% auto;
   }
 }
 
@@ -307,7 +307,7 @@
 
 @media only screen and (min-width: 1200px) {
   .homepage .body .side .news .second .contentNews .textNews {
-    margin: 25% auto;
+    margin: 10% auto;
   }
 }
 

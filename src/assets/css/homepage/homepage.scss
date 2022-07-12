@@ -158,7 +158,7 @@
                         }
                         .textNews{
                             @include devices(laptop) {
-                                margin: 25% auto ;
+                                margin: 10% auto ;
         
                             }
                             @include devices(tablet) {
@@ -212,7 +212,7 @@
                         }
                         .textNews{
                             @include devices(laptop) {
-                                margin: 25% auto ;
+                                margin: 10% auto ;
                             }
                             @include devices(tablet) {
                                 margin: 5% auto ;
