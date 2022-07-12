@@ -16,7 +16,7 @@ i18next
                     // Homepage
                     welcomeText : "<0>Bienvenue sur mon portfolio !<br/> Ne t'y perds pas !</0>",
                     checkItOut : "<0>Regarde-moi ça</0>",
-                    informations : "<0>Voici mes deux derniers projets en date,<br/>Tu peux y trouver autant de tout petits projets qui m'ont pris moins d'un jour à faire autant que d'autres qui m'ont presque détruit le cerveau.</0>",
+                    informations : "<0>Voici mes deux derniers projets en date,<br/>Tu peux y trouver de tout petits projets qui m'ont pris moins d'un jour à faire comme d'autres qui m'ont presque détruit le cerveau.</0>",
                     firstNews : "<0>Un bon jeu de mangeurs de carte graphique !</0><1><0>Connais-tu tes bases en informatique ?</0><1><0>Viens là</0></1></1>",
                     secondNews : "<0>Va-t-il faire beau aujourd'hui ?</0><1>Vas-tu te prendre une insolation ?</1><2><0>Vérifie ici</0></2>",
                 }
