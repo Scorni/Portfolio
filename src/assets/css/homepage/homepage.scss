@@ -63,6 +63,7 @@
                 }
             }
             .checkLink{
+                padding-inline: 1%;
                 font-family: 'Bebas Neue', cursive;
                 font-size: 35px;
                 font-weight: lighter;
@@ -74,7 +75,6 @@
                 box-shadow: 5px 5px 0px rgb(0, 0, 0);
                 transform: rotateZ(-8deg) translateX(-50px);
                 animation: default_anim 3s linear infinite alternate;
-                padding-inline: 0px;
             }
         }
         .side{

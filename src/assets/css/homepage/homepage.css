@@ -80,6 +80,7 @@
 }
 
 .homepage .body .checkButton .checkLink {
+  padding-inline: 1%;
   font-family: 'Bebas Neue', cursive;
   font-size: 35px;
   font-weight: lighter;
@@ -94,7 +95,6 @@
           transform: rotateZ(-8deg) translateX(-50px);
   -webkit-animation: default_anim 3s linear infinite alternate;
           animation: default_anim 3s linear infinite alternate;
-  padding-inline: 0px;
 }
 
 .homepage .body .side {

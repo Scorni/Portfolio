@@ -4,18 +4,9 @@ import { NavLink } from "react-router-dom";
 import Arrow from "./arrow";
 import SecondArrow from "../assets/svg/homepage/secondArrow";
 import { Icon } from '@iconify/react';
-import { useTranslation, Trans } from "react-i18next";
+import {  Trans } from "react-i18next";
 
 export default function homepage() {
-  // const { t } = useTranslation();
-  const lngs = {
-    en: {
-      nativeName :'English'
-    },
-    fr: {
-      nativeName :'French'
-    }
-  }
   return (
     <div className="homepage">
       <div className="body">

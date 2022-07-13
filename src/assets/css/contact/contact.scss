@@ -107,7 +107,8 @@
             border-radius: 5px;
             box-shadow: 2px 2px 0px rgb(0, 0, 0);
             padding:0.55rem 1rem;
-            width: 35%;
+            width: 45%;
+            box-sizing:content-box;
             font-size: 0.998rem;
             font-weight: normal;   
             font-family: 'Mabry pro', sans-serif;
@@ -115,16 +116,18 @@
             letter-spacing: 0.005em;
         }
         .questionTextArea{
-            display: inline-block;
-            float: left;
+            
+            box-sizing:content-box;
+
             margin-bottom: 5px;
             height: 80px;
-            width:  500px;
+            // width:  500px;
             resize: vertical;
         }
         .submitQuestion{
-            margin-block: 3%;
-            max-width: 20%;
+            margin-bottom: 3%;
+            // max-width: 20%;
+            
         }
     }
 }

@@ -18,16 +18,16 @@ export default function Arrow() {
             <form>
                 <div className='name'>
                     <label for="name" className="nameLabel">Name</label>
-                    <input type="text" name="name" className="nameInput"></input>
+                    <input placeholder="John" type="text" name="name" className="nameInput"></input>
                 </div>
                 <div className='firstName'>
                     <label for="firstName" className="firstNameLabel">First Name</label>
-                    <input type="text" name="firstName" className="firstNameInput"></input> 
+                    <input placeholder="Doe" type="text" name="firstName" className="firstNameInput"></input> 
                 </div>
                 <br/>
                 <div className="mail">
                     <label for="email" className="emailLabel">Email</label>
-                    <input type="email" name="email" className="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required></input>
+                    <input placeholder="John@Doe.com"type="email" name="email" className="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required></input>
                 </div>
                 <div className="subject">
                     <label for="subject" className="subjectLabel">Choose your subject</label>
@@ -46,7 +46,7 @@ export default function Arrow() {
                     <textarea className="questionTextArea" name="questionTextArea" form="usrform" placeholder="Write Here !" />
                 </div>
                 <div className="sendQuestion">
-                    <label></label>
+                    <label for="submitQuestion"></label>
                     <input name="submitQuestion" className="submitQuestion" type="submit" value="Send"></input>
                 </div>
             </form>

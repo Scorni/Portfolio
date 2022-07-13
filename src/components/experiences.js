@@ -7,6 +7,8 @@ import VueSVG from '../assets/svg/experiences/vueSVG'
 import NodeSVG from '../assets/svg/experiences/nodeSVG'
 import FigmaSVG from '../assets/svg/experiences/figmaSVG'
 // import Computer from '../assets/svg/experiences/computer'
+import {  Trans } from "react-i18next";
+
 
 // TODO: add skill vuejs reactjs 
 export default function Experiences() {
@@ -14,90 +16,99 @@ export default function Experiences() {
         <main>
             <Slide left>
                 <section className="professionnal">
-                    <h2 >Professionnal and Educationnal Experiences</h2>
+                    <Trans i18nKey="title">
+                        <h2 >Professionnal and Educationnal Experiences</h2>
+                    </Trans>
                     <div className="stage">
-                        <h3>
-                            Bachelor Computer Sciences at Ephec.<br />
-                            From 2017 to 2021
-                        </h3>
-                        <p>
-                            Stage at IT-School  as fullstack php developper under symfony.<br/> 
-                            February to may 2020.
-                        </p>
+                        <Trans i18nKey="stage">
+                            <h3>
+                                Bachelor Computer Sciences at Ephec.<br />
+                                From 2017 to 2021
+                            </h3>
+                            <p>
+                                Stage at IT-School  as fullstack php developper under symfony.<br/> 
+                                February to may 2020.
+                            </p>
+                        </Trans>
                     </div>
                     <div className="wecodx">
-                        <h3>
-                            Student fullstack developper at Wecodx.<br/> 
-                            August  2021                    
-                        </h3>
-                        <p>
-                            Developping with PHP under symfony environment. <br />
-                            Frontend was held by classic Javascript | Twig.                     
-                        </p>
+                        <Trans i18nKey="wecodx">
+                            <h3>
+                                Student fullstack developper at Wecodx.<br/> 
+                                August  2021                    
+                            </h3>
+                            <p>
+                                Developping with PHP under symfony environment. <br />
+                                Frontend was held by classic Javascript | Twig.                     
+                            </p>
+                        </Trans>
                     </div>
                     <div className="uliege">
-                        <h3>
-                            Master artificial intelligence at University of Liège.<br/> 
-                            Septembre 2021 - February 2022
-                        </h3>
-                        <p>
-                            Was the wrong way choosen !
-                        </p>
+                        <Trans i18nKey="uliege">
+                            <h3>
+                                Master artificial intelligence at University of Liège.<br/> 
+                                Septembre 2021 - February 2022
+                            </h3>
+                            <p>
+                                Was the wrong way choosen !
+                            </p>
+                        </Trans>
                     </div>
-                    <div>
-                        {/* <Computer/> */}
-                    </div>
-                    {/* <div className="hrorganizer">
-                        <h3>
-                            Fullstack developper at HrOrganizer. <br/>
-                            Avril-may  2022
-                        </h3>
-                        <p>
-                            Developping with PHP under symfony environment. <br/>
-                            Frontend was held by Vue | Twig.                     
-                        </p>
-                    </div> */}
                 </section>
             </Slide>
             <Slide right>
                 <section className="personnal">
-                    <h2 className="headTitle">Personnal Projects and Skills</h2>
+                    <Trans i18nKey="titleTwo">
+                        <h2 className="headTitle">Personnal Projects and Skills</h2>
+                    </Trans >
                     <div className="description">
-                        <h3>
-                            Skills 
-                        </h3>
-                        <p>
-                            Those are some of the technologies that I use <br/>
-                        </p>
+                        <Trans i18nKey="firstDescription">
+                            <h3>
+                                Skills 
+                            </h3>
+                            <p>
+                                Those are some of the technologies that I use <br/>
+                            </p>
+                        </Trans>
+                        
                     </div>
                     <div className='skills'>
                         <div className='first'>
-                            <div className='react'>
-                                <NodeSVG />
-                            </div>
-                            <div className='vue'>
-                                <ReactSVG />
-                            </div>
+                            <a href='https://nodejs.org/en/' target={'_blank'}>
+                                <div className='react'>
+                                    <NodeSVG />
+                                </div>
+                            </a>
+                            <a href='https://en.reactjs.org' target={'_blank'}>
+                                <div className='vue'>
+                                    <ReactSVG />
+                                </div>
+                            </a>
                         </div>
                         <div className='second'>
-                            <div className='node'>
-                                <VueSVG />
-                            </div>
-                            <div className='figma'>
-                                <FigmaSVG />
-
-                            </div>
+                            <a href='https://vuejs.org' target={'_blank'}>
+                                <div className='node'>
+                                    <VueSVG />
+                                </div>
+                            </a>
+                            <a href='https://www.figma.com' target={'_blank'}>
+                                <div className='figma'>
+                                    <FigmaSVG />
+                                </div>
+                            </a>
                         </div>
                         
                     </div>
                     <div className="description">
-                        <h3>
-                            Currently learning UX | UI and Web Design 
-                        </h3>
-                        <p>
-                            By doing this portfolio for example <br/>
-                            Or those side projects
-                        </p>
+                        <Trans i18nKey="secondDescription">
+                            <h3>
+                                Currently learning UX | UI and Web Design 
+                            </h3>
+                            <p>
+                                By doing this portfolio for example <br/>
+                                Or those side projects
+                            </p>
+                        </Trans>
                     </div>
                     <div>
                         <div className="sideProject">
@@ -106,26 +117,29 @@ export default function Experiences() {
                                     <a href='https://scorni-usbe-aters-quizz.vercel.app' target={'_blank'}>
 
                                         <img className='quizzPreview' src={previewQuizz}></img>
+                                        <Trans i18nKey="quizz">
                                             <h4>
                                                 Nerd quizz game
                                             </h4>
-                                        
-                                        <p className='date'>
-                                            03/06/2022
-                                        </p>
+                                            
+                                            <p className='date'>
+                                                03/06/2022
+                                            </p>
+                                        </Trans>
                                     </a>
-
                                 </div>
                                 <div className="weather">
                                     <a href='https://scorni.github.io/Weather/' target={'_blank'}>
                                         <img className='weatherPreview' src={previewWeather}></img>
+                                        <Trans i18nKey="weather">
                                             <h4>
-                                                Weather app
+                                                Weather app                                          
                                             </h4>
+                                            <p className='date'>
+                                                01/06/2022
+                                            </p>
+                                        </Trans>
                                         
-                                        <p className='date'>
-                                            01/06/2022
-                                        </p>
                                     </a>
 
                                 </div>

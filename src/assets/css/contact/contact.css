@@ -141,7 +141,9 @@
   -webkit-box-shadow: 2px 2px 0px black;
           box-shadow: 2px 2px 0px black;
   padding: 0.55rem 1rem;
-  width: 35%;
+  width: 45%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   font-size: 0.998rem;
   font-weight: normal;
   font-family: 'Mabry pro', sans-serif;
@@ -150,16 +152,14 @@
 }
 
 .contact .contactForm .questionTextArea {
-  display: inline-block;
-  float: left;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   margin-bottom: 5px;
   height: 80px;
-  width: 500px;
   resize: vertical;
 }
 
 .contact .contactForm .submitQuestion {
-  margin-block: 3%;
-  max-width: 20%;
+  margin-bottom: 3%;
 }
 /*# sourceMappingURL=contact.css.map */
