@@ -1,0 +1,27 @@
+{
+    "navLink" :"<0>ACCUEIL</0><1>A PROPOS</1><2>EXPERIENCES</2><3>CONTACT</3>",
+    "welcomeText" : "<0>Bienvenue sur mon portfolio !<br/> Ne t'y perds pas !</0>",
+    "checkItOut" : "<0>Regarde-moi ça</0>",
+    "informations" : "<0>Voici mes deux derniers projets en date,<br/>Tu peux y trouver de tout petits projets qui m'ont pris moins d'un jour à faire comme d'autres qui m'ont presque détruit le cerveau.</0>",
+    "firstNews" : "<0>Un bon jeu de mangeurs de carte graphique !</0><1><0>Connais-tu tes bases en informatique ?</0><1><0>Viens là</0></1></1>",
+    "secondNews" : "<0>Va-t-il faire beau aujourd'hui ?</0><1>Vas-tu te prendre une insolation ?</1><2><0>Vérifie ici</0></2>",
+    "birthday": "<0>Le commencement</0><p>Ma vie a démarré dans le magnifique pays qu'est la Belgique, le 20 mars 1997.<br/> J'ai grandi dans la province du Brabant Wallon.</p>",
+    "student": "<0>Vie estudiantine</0><1>J'ai développé mes compétences en informatique au sein de l'EPHEC,<br/> à Louvain-La-Neuve.<br/> C'est ici que le coup de foudre eu lieu avec la programmation, surtout de pouvoir faire prendre vie à mon imagination. <br/> J'ai tout d'abord commencer par le Javascript en passant ensuite par le bon vieux PHP",
+    "atm" : "<0>Actuellement</0><1>Ces derniers temps,je me suis formé aux frameworks Javascript tel que React et Vue,<br/> tout en étoffant mes qualités de Designer Web<br/> Je suis disponible pour tout projet nécessitant Design, Frontend ou en Backend, de la première ligne de code à la dernière ! <br/> Je suis donc actuellement à la recherche de projet sur lesquels travailler !</1><2>A la recherche d'un nouveau projet ?</2><3><0>Me Contacter</0></3>",
+    "title" : "<0>Formations | expériences professionnelles </0>",
+    "stage":"<0>Bachelier en Technologie de l'Informatique.<br/>De 2017 à 2021</0><1>Stage à IT-School en tant que developpeur fullstack php sous symfony.<br/>De février jusqu'à mai 2020.</1>",
+    "wecodx" :"<0>Job d'étudiant | Développeur fullstack à WeCodx.<br/>Août à Septembre 2021</0><1>Développement PHP sous symfony. <br/>Le Frontend étant géré par du Javascript classique et Twig.</1>",
+    "uliege" : "<0>Master en intelligence artificielle  à l'université de Liège.<br/>Septembre 2021 - Février 2022</0><p>Oops,trompé de chemin !</p> ",
+    "titleTwo" : "<0>Projets personnel et Compétences</0>",
+    "firstDescription": "<0>Compétences</0><1>Voici certaines des technologies que j'utilise <br/></1>",
+    "secondDescription":"<0>J'apprends actuellement l'UX | UI et le Web Design</0><1>En développant par example ce portfolio <br/>ou encore via ces projets</1>",
+    "quizz" : "<0>Quizz de bouffeur de clé usb</0><1>03/06/2022</1>",
+    "weather": "<0>Application météo</0><1>01/06/2022</1>",
+    "text": "<0>Une question à poser ?<br/>Besoin d'un nouveau design pour votre site ? <br/>Ou simplement besoin d'un nouveau site ? <br/>Besoin d'aide sur votre site actuel ? <br/>Besoin d'un nom de domaine ou d'héberger votre application? <br/>N'hésitez pas à me soliciter !</0>",
+    "name": "<0>Nom</0>",
+    "firstName": "<0>Prénom</0>",
+    "email": "<0>Email</0>",
+    "subject":"<0>Choisissez votre sujet</0><1><0>Veuillez choisir un sujet</0><1>Design</1><2>Prix</2><3>Site Web</3><4>Domaine</4><5>Hébergement</5><6>Autre</6></1>",
+    "question": "<0>Posez votre question ici</0>"
+
+}
