@@ -33,7 +33,7 @@ export default function header() {
                   {i18n.resolvedLanguage === "fr" &&
                     <button className="lngButton" type="submit" onClick={()=>languageAndReload("en")} >
                       English
-                      <Icon className="flag" icon="flag:gb-eng-4x3" />
+                      <Icon className="flag" icon="flag:gb-4x3" />
 
                     </button>
                     

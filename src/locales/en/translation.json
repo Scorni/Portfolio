@@ -22,7 +22,8 @@
     "firstName": "<0>First Name</0>",
     "email": "<0>Email</0>",
     "subject":"<0>Choose your subject</0><1><0>Please choose your Subject</0><1>Design</1><2>Price</2><3>Website</3><4>Domain</4><5>Hosting</5><6>Other</6></1>",
-    "question": "<0>Ask your question below</0>"
+    "question": "<0>Ask your question below</0>",
+    "submit" : "Submit"
 
 
 
