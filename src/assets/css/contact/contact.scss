@@ -16,6 +16,9 @@
     }
 }
 .contact{
+    opacity: 0;
+    animation: fadeIn 500ms forwards cubic-bezier(0.755, 0.050, 0.855, 0.060);
+
     font-size: 1.188rem;
     font-weight: normal;   
     font-family: 'Mabry pro', sans-serif;
@@ -130,4 +133,7 @@
             
         }
     }
+}
+@keyframes fadeIn {
+    100% { opacity: 1; }
 }

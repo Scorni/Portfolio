@@ -1,4 +1,7 @@
 .contact {
+  opacity: 0;
+  -webkit-animation: fadeIn 500ms forwards cubic-bezier(0.755, 0.05, 0.855, 0.06);
+          animation: fadeIn 500ms forwards cubic-bezier(0.755, 0.05, 0.855, 0.06);
   font-size: 1.188rem;
   font-weight: normal;
   font-family: 'Mabry pro', sans-serif;
@@ -161,5 +164,17 @@
 
 .contact .contactForm .submitQuestion {
   margin-bottom: 3%;
+}
+
+@-webkit-keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=contact.css.map */

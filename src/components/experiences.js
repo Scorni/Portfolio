@@ -1,7 +1,6 @@
 import '../assets/css/experiences/experiences.css';
 import previewWeather from "../assets/img/experiences/weatherApp.PNG"
 import previewQuizz from "../assets/img/experiences/quizzApp.PNG"
-import { Slide, Fade}  from 'react-reveal';
 import ReactSVG from '../assets/svg/experiences/reactSVG'
 import VueSVG from '../assets/svg/experiences/vueSVG'
 import NodeSVG from '../assets/svg/experiences/nodeSVG'
@@ -14,7 +13,6 @@ import {  Trans } from "react-i18next";
 export default function Experiences() {
     return(
         <main>
-            <Slide left>
                 <section className="professionnal">
                     <Trans i18nKey="title">
                         <h2 >Professionnal and Educationnal Experiences</h2>
@@ -55,8 +53,6 @@ export default function Experiences() {
                         </Trans>
                     </div>
                 </section>
-            </Slide>
-            <Slide right>
                 <section className="personnal">
                     <Trans i18nKey="titleTwo">
                         <h2 className="headTitle">Personnal Projects and Skills</h2>
@@ -144,26 +140,10 @@ export default function Experiences() {
 
                                 </div>
                             </div>
-                            {/* <div className='WIPRow'>
-                                <div className='WIPProject'>
-                                    <a href='https://youtu.be/dQw4w9WgXcQ' target={'_blank'}>
-                                        <p className="WIPText"> Work in Progress</p>
-                                        <h4>
-                                            Wanna see ?
-                                        </h4>
-                                        
-                                        <p className='date'>
-                                            ??/??/????
-                                        </p>
-                                    </a>
-
-                                </div>
-                            </div> */}
+                            
                         </div>
                     </div>
                 </section>
-            </Slide>
-            
         </main>
     )
 }

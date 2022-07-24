@@ -14,8 +14,9 @@
 
 .about .profile {
   margin: 0 auto;
-  -webkit-animation: scale-up-center 0.4s;
-          animation: scale-up-center 0.4s;
+  opacity: 0;
+  -webkit-animation: fadeIn 500ms forwards cubic-bezier(0.755, 0.05, 0.855, 0.06);
+          animation: fadeIn 500ms forwards cubic-bezier(0.755, 0.05, 0.855, 0.06);
 }
 
 .about .profile .lines {
@@ -55,6 +56,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  opacity: 0;
+  -webkit-animation: fadeIn 500ms forwards cubic-bezier(0.755, 0.05, 0.855, 0.06);
+          animation: fadeIn 500ms forwards cubic-bezier(0.755, 0.05, 0.855, 0.06);
 }
 
 @media only screen and (min-width: 1024px) {
@@ -554,6 +558,18 @@
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
   }
 }
 /*# sourceMappingURL=about.css.map */

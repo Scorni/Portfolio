@@ -26,7 +26,8 @@
     
     .profile{
         margin: 0 auto;
-        animation:scale-up-center 0.4s;
+        opacity: 0;
+        animation: fadeIn 500ms forwards cubic-bezier(0.755, 0.050, 0.855, 0.060);
 
         .lines{
             width: 50px;
@@ -41,7 +42,7 @@
             
             .me{
                 max-width:100%;
-            max-height:100%;
+                max-height:100%;
             }
         }
         
@@ -59,7 +60,8 @@
         
         .birth{
             display: flex;
-            
+            opacity: 0;
+            animation: fadeIn 500ms forwards cubic-bezier(0.755, 0.050, 0.855, 0.060);
             @include devices(laptop) {
                 flex-direction: row;
             }
@@ -394,4 +396,7 @@
     100%{
         transform:scale(1)
     } 
+}
+@keyframes fadeIn {
+    100% { opacity: 1; }
 }

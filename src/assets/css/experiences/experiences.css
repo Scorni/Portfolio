@@ -4,7 +4,7 @@ main {
   font-family: 'Mabry pro', sans-serif;
   line-height: 1.4;
   letter-spacing: 0.005em;
-  width: 100%;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,11 +41,15 @@ main {
 }
 
 main .professionnal {
+  position: relative;
   background-color: #ffd4e5;
 }
 
 @media only screen and (min-width: 1024px) {
   main .professionnal {
+    left: -45vw;
+    -webkit-animation: slideLeft 1s forwards cubic-bezier(0.755, 0.05, 0.855, 0.06);
+            animation: slideLeft 1s forwards cubic-bezier(0.755, 0.05, 0.855, 0.06);
     width: 50%;
     border-block: black 2px solid;
     border-right: black 1px solid;
@@ -93,11 +97,15 @@ main .professionnal .stage:hover, main .professionnal .wecodx:hover, main .profe
 }
 
 main .personnal {
+  position: relative;
   background-color: #feffa3;
 }
 
 @media only screen and (min-width: 1024px) {
   main .personnal {
+    right: -45vw;
+    -webkit-animation: slideRight 1s forwards cubic-bezier(0.755, 0.05, 0.855, 0.06);
+            animation: slideRight 1s forwards cubic-bezier(0.755, 0.05, 0.855, 0.06);
     width: 50%;
     border-left: black 1px solid;
     border-block: black 2px solid;
@@ -369,5 +377,29 @@ main .personnal .WIPProject h4 {
 
 main .personnal .WIPProject .WIPText {
   padding-top: 5%;
+}
+
+@-webkit-keyframes slideLeft {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slideLeft {
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes slideRight {
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes slideRight {
+  100% {
+    right: 0;
+  }
 }
 /*# sourceMappingURL=experiences.css.map */

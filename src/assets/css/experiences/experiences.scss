@@ -21,7 +21,7 @@ main{
     font-family: 'Mabry pro', sans-serif;
     line-height: 1.4;
     letter-spacing: 0.005em;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
 
@@ -35,7 +35,10 @@ main{
         flex-direction: column;
     }
     .professionnal{
+        position: relative;
         @include devices(laptop) {
+            left: -45vw;
+            animation: slideLeft 1s forwards cubic-bezier(0.755, 0.050, 0.855, 0.060);
             width: 50%;
             border-block: black 2px solid;
             border-right: black 1px solid ;
@@ -76,7 +79,11 @@ main{
         
     }
     .personnal{
+        position: relative;
+        
         @include devices(laptop) {
+            right: -45vw;
+            animation: slideRight 1s forwards cubic-bezier(0.755, 0.050, 0.855, 0.060);
             width: 50%;
             border-left: black 1px solid;
             border-block: black 2px solid;
@@ -259,3 +266,10 @@ main{
     }
 }
 
+
+@keyframes slideLeft {
+    100% { left: 0; }
+}
+@keyframes slideRight {
+    100% { right: 0; }
+}

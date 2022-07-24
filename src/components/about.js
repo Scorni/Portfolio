@@ -16,34 +16,30 @@ import {  Trans } from "react-i18next";
 export default function About() {
  return (
     <div className="about">
-        <Fade>
-            <div className="profile">
-                    <div className="lines">
-                        <Lines />
-                    </div>
-                    <div className="bubble">
-                        <img src={picture} alt="test" className="me" />
-                    </div>
+        <div className="profile">
+            <div className="lines">
+                <Lines />
             </div>
-        </Fade>
+            <div className="bubble">
+                <img src={picture} alt="test" className="me" />
+            </div>
+        </div>
         <main className="formation">
-            <Fade>
                 <section className="birth">
-                    <div className="first"> 
-                        <div className="birthday">
-                            <Parallax  translateY={['-10px', '-50px','easeInOut']} scale= {[1, 1, 'easeInQuad']}  speed={-500}>
-                                <Icon className="cake" icon="icon-park-twotone:cake-five" />
-                            </Parallax>
-                            <Trans i18nKey ="birthday">
-                                <h2>Birth of the millennial</h2>
-                                <p>
-                                    The guy from the picture started it's life in the beautiful country of Belgium on 20th march 1997.
-                                </p>
-                            </Trans>
-                        </div>
+                <div className="first"> 
+                    <div className="birthday">
+                        <Parallax  translateY={['-10px', '-50px','easeInOut']} scale= {[1, 1, 'easeInQuad']}  speed={-500}>
+                            <Icon className="cake" icon="icon-park-twotone:cake-five" />
+                        </Parallax>
+                        <Trans i18nKey ="birthday">
+                            <h2>Birth of the millennial</h2>
+                            <p>
+                                The guy from the picture started it's life in the beautiful country of Belgium on 20th march 1997.
+                            </p>
+                        </Trans>
                     </div>
-                </section>
-            </Fade>
+                </div>
+            </section>
             <Slide  right>
                 <section className="school">
                     <div className="second">
@@ -74,7 +70,6 @@ export default function About() {
                     
                 </section>
             </Slide >
-            
             <Slide  left>
                 <section className="atm">
                         <div className='third'>
