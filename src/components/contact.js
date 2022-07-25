@@ -1,6 +1,6 @@
 import '../assets/css/contact/contact.css';
 import {  Trans,useTranslation } from "react-i18next";
-import React, { useState } from 'react';
+import React from 'react';
 import emailjs from '@emailjs/browser';
 // Here, we display our Navbar
 export default function Arrow() {
