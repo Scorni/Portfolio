@@ -36,26 +36,26 @@ export default function Arrow() {
                         <Trans i18nKey="name">
                             <label label for="name" className="nameLabel">Name</label>
                         </Trans>
-                        <input placeholder="John" type="text" name="name" className="nameInput" onChange={event => setName(event.target.value)}></input>
+                        <input placeholder="John" type="text" name="name" className="nameInput" ></input>
                     </div>
                     <div className='firstName'>
                         <Trans i18nKey="firstName">
                             <label for="firstName" className="firstNameLabel">First Name</label>
 
                         </Trans>
-                        <input placeholder="Doe" type="text" name="firstName" className="firstNameInput" onChange={event => setFirstName(event.target.value)}></input> 
+                        <input placeholder="Doe" type="text" name="firstName" className="firstNameInput" ></input> 
                     </div>
                     <br/>
                     <div className="mail">
                         <Trans i18nKey="email">
                             <label for="email" className="emailLabel">Email</label>
                         </Trans>
-                        <input placeholder="John@Doe.com"type="email" name="email" className="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  onChange={event => setMail(event.target.value)} required></input>
+                        <input placeholder="John@Doe.com"type="email" name="email" className="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"   required></input>
                     </div>
                     <div className="subject">
                         <Trans i18nKey="subject">
                             <label for="subject" className="subjectLabel">Choose your subject</label>
-                            <select className="subjectLabel" name="subjectLabel" id="pet-select" onChange={event => setSubject(event.target.value)}>
+                            <select className="subjectLabel" name="subjectLabel" id="pet-select" >
                                 <option defaultValue="">Please choose your Subject</option>
                                 <option value="Design">Design</option>
                                 <option value="Price">Price</option>
