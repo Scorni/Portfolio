@@ -5,12 +5,6 @@ import emailjs from '@emailjs/browser';
 // Here, we display our Navbar
 export default function Arrow() {
     const { t } = useTranslation("");
-    const [name, setName] = useState("");
-    const [firstName, setFirstName] = useState("");
-    const [mail, setMail] = useState("");
-    const [subject, setSubject] = useState("");
-    const [question, setQuestion] = useState("");
-    
     function sendEmail(e){
           e.preventDefault();
       
