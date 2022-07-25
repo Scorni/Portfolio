@@ -1,18 +1,26 @@
 import '../assets/css/contact/contact.css';
 import {  Trans,useTranslation } from "react-i18next";
 import React, { useState } from 'react';
-
+import emailjs from '@emailjs/browser';
 // Here, we display our Navbar
 export default function Arrow() {
-    const { t, i18n } = useTranslation("");
+    const { t } = useTranslation("");
     const [name, setName] = useState("");
     const [firstName, setFirstName] = useState("");
     const [mail, setMail] = useState("");
     const [subject, setSubject] = useState("");
     const [question, setQuestion] = useState("");
-    const handleSubmit = (event) =>{
-        console.log(name);
-        event.preventDefault();
+    
+    function sendEmail(e){
+          e.preventDefault();
+      
+          emailjs.sendForm('service_g2qh20m', 'template_ejfj8yb', e.target, 'wV3ygYwAcHmU34yBN')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+            e.target.reset();
     }
     return (
         <main className="contact">
@@ -29,7 +37,7 @@ export default function Arrow() {
                 </Trans>
             </div>
             <div className="contactForm">
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={sendEmail}>
                     <div className='name'>
                         <Trans i18nKey="name">
                             <label label for="name" className="nameLabel">Name</label>
@@ -68,7 +76,7 @@ export default function Arrow() {
                         <Trans i18nKey="question">
                             <label for="questionTextArea" className="questionLabel">Ask your question below</label>
                         </Trans>
-                        <textarea className="questionTextArea" name="questionTextArea" form="usrform" placeholder="..." onChange={event => setQuestion(event.target.value)}/>
+                        <textarea className="questionTextArea" name="questionTextArea"  placeholder="..."/>
                     </div>
                     <div className="sendQuestion">
                         <label for="submitQuestion"></label>

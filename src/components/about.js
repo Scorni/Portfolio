@@ -9,7 +9,6 @@ import Php from "../assets/svg/about/php"
 import WorkingAtHome from "../assets/svg/about/workHome";
 import Study from "../assets/svg/about/study"
 import { NavLink } from "react-router-dom";
-import { Slide, Fade}  from 'react-reveal';
 import {  Trans } from "react-i18next";
 
 // Here, we display our Navbar
@@ -40,7 +39,6 @@ export default function About() {
                     </div>
                 </div>
             </section>
-            <Slide  right>
                 <section className="school">
                     <div className="second">
                         <div>
@@ -69,8 +67,6 @@ export default function About() {
                     </div>
                     
                 </section>
-            </Slide >
-            <Slide  left>
                 <section className="atm">
                         <div className='third'>
                             <Trans i18nKey="atm">
@@ -99,10 +95,6 @@ export default function About() {
                             </Parallax>
                         </div>
                 </section>
-            </Slide>
-           
-            
-            
         </main>
         
     </div>

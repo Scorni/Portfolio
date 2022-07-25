@@ -130,9 +130,13 @@
         }
         .school{
             display: flex;
+            position: relative;
+
 
             @include devices(laptop) {
                 flex-direction: row;
+                animation: slideRight 1s forwards cubic-bezier(0.755, 0.050, 0.855, 0.060);
+                right: -100vw;
             }
             @include devices(tablet) {
                 flex-direction: column-reverse;
@@ -242,9 +246,11 @@
         .atm{
             position: relative;
             display: flex;
-
             @include devices(laptop) {
                 flex-direction: row-reverse;
+                animation: slideLeft 1s forwards cubic-bezier(0.755, 0.050, 0.855, 0.060);
+                left: -50vw;
+
             }
             @include devices(tablet) {
                 flex-direction: column-reverse;
@@ -399,4 +405,11 @@
 }
 @keyframes fadeIn {
     100% { opacity: 1; }
+}
+
+@keyframes slideLeft {
+    100% { left: 0; }
+}
+@keyframes slideRight {
+    100% { right: 0; }
 }

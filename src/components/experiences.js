@@ -9,7 +9,7 @@ import FigmaSVG from '../assets/svg/experiences/figmaSVG'
 import {  Trans } from "react-i18next";
 
 
-// TODO: add skill vuejs reactjs 
+// TODO: 404
 export default function Experiences() {
     return(
         <main>
@@ -70,24 +70,24 @@ export default function Experiences() {
                     </div>
                     <div className='skills'>
                         <div className='first'>
-                            <a href='https://nodejs.org/en/' target={'_blank'}>
+                            <a href='https://nodejs.org/en/' target={'_blank'} rel="noreferrer">
                                 <div className='react'>
                                     <NodeSVG />
                                 </div>
                             </a>
-                            <a href='https://en.reactjs.org' target={'_blank'}>
+                            <a href='https://en.reactjs.org' target={'_blank'} rel="noreferrer">
                                 <div className='vue'>
                                     <ReactSVG />
                                 </div>
                             </a>
                         </div>
                         <div className='second'>
-                            <a href='https://vuejs.org' target={'_blank'}>
+                            <a href='https://vuejs.org' target={'_blank'} rel="noreferrer">
                                 <div className='node'>
                                     <VueSVG />
                                 </div>
                             </a>
-                            <a href='https://www.figma.com' target={'_blank'}>
+                            <a href='https://www.figma.com' target={'_blank'} rel="noreferrer">
                                 <div className='figma'>
                                     <FigmaSVG />
                                 </div>
@@ -110,9 +110,9 @@ export default function Experiences() {
                         <div className="sideProject">
                             <div className='firstRow'>
                                 <div className="quizz">
-                                    <a href='https://scorni-usbe-aters-quizz.vercel.app' target={'_blank'}>
+                                    <a href='https://scorni-usbe-aters-quizz.vercel.app' target={'_blank'} rel="noreferrer">
 
-                                        <img className='quizzPreview' src={previewQuizz}></img>
+                                        <img className='quizzPreview' src={previewQuizz} alt="Nerd quizz game"></img>
                                         <Trans i18nKey="quizz">
                                             <h4>
                                                 Nerd quizz game
@@ -125,8 +125,8 @@ export default function Experiences() {
                                     </a>
                                 </div>
                                 <div className="weather">
-                                    <a href='https://scorni.github.io/Weather/' target={'_blank'}>
-                                        <img className='weatherPreview' src={previewWeather}></img>
+                                    <a href='https://scorni.github.io/Weather/' target={'_blank'} rel="noreferrer">
+                                        <img className='weatherPreview' src={previewWeather} alt="Weather app"></img>
                                         <Trans i18nKey="weather">
                                             <h4>
                                                 Weather app                                          

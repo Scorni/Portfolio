@@ -1,13 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { useTranslation, Trans } from "react-i18next";
+import {  Trans } from "react-i18next";
 import i18n from "i18next";
 import { Icon } from '@iconify/react';
-
-const lngs = {
-  en:{ nativeName: 'English'},
-  fr:{ nativeName: 'French'},
-}
 
 function languageAndReload(lng){
   i18n.changeLanguage(lng);

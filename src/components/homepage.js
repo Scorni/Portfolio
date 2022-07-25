@@ -2,7 +2,6 @@ import '../assets/css/homepage/homepage.css';
 
 import { NavLink } from "react-router-dom";
 import Arrow from "./arrow";
-import SecondArrow from "../assets/svg/homepage/secondArrow";
 import { Icon } from '@iconify/react';
 import {  Trans } from "react-i18next";
 
@@ -48,7 +47,7 @@ export default function homepage() {
                   <p className="subTitleNews">what a game for nerd people !</p>
                   <div>
                     <p className='textNews'>Are you sure you know your tech's basics ?</p>
-                    <a href='https://scorni-usbe-aters-quizz.vercel.app' target={'_blank'} className="quizzLink">
+                    <a href='https://scorni-usbe-aters-quizz.vercel.app' target={'_blank'} className="quizzLink" rel="noreferrer">
                         <h3>Click here</h3>
                     </a>
                   </div>
@@ -64,7 +63,7 @@ export default function homepage() {
                   <p className="subTitleNews">Hum is it a good day today ?</p>
                   <p className='textNews'>Wanna see if your city will let you deshydrated ? 
                   </p>
-                  <a href='https://scorni.github.io/Weather/' target={'_blank'} className ="weatherLink">
+                  <a href='https://scorni.github.io/Weather/' target={'_blank'} className ="weatherLink" rel="noreferrer">
                     <h3>Go for it</h3>
                   </a>
                 </Trans>
