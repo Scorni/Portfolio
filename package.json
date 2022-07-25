@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://scorni.github.io/portfolio",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@testing-library/jest-dom": "^5.16.4",
@@ -47,7 +46,6 @@
     ]
   },
   "devDependencies": {
-    "@iconify/react": "^3.2.2",
-    "gh-pages": "^4.0.0"
+    "@iconify/react": "^3.2.2"
   }
 }
