@@ -24,7 +24,7 @@
     "subject":"<0>Choisissez votre sujet</0><1><0>Veuillez choisir un sujet</0><1>Design</1><2>Prix</2><3>Site Web</3><4>Domaine</4><5>Hébergement</5><6>Autre</6></1>",
     "question": "<0>Posez votre question ici</0>",
     "submit" : "Envoyer",
-    "copyright" : "<p>@ 2022 MAXENCE SCORNICIEL Tous droits réservés</p>",
-    "footerLink" :"<0>ACCUEIL</0><1>A PROPROS</1><2>EXPERIENCES</2><3>ME CONTACTer </3>"
+    "copyright" : "<p>@ 2022 MAXENCE SCORNICIEL Tous droits réservés</p><1></1>",
+    "footerLink" :"<0>ACCUEIL</0><1>A PROPROS</1><2>EXPERIENCES</2><3>CONTACT</3>"
 
 }

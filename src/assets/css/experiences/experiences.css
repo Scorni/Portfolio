@@ -4,7 +4,6 @@ main {
   font-family: 'Mabry pro', sans-serif;
   line-height: 1.4;
   letter-spacing: 0.005em;
-  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

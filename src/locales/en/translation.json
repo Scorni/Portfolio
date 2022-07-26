@@ -5,9 +5,9 @@
     "informations" : "<0>Here are my two latest personnal projects,<br/>You can find as much of tiny projects that took me less than one day as bigger projects than bring my brain to tears.</0>",
     "firstNews": "<0>what a game for nerd people !</0><1><0>Are you sure you know your tech's basics ?</0><1><0>Click here</0></1></1>",
     "secondNews" : "<0>Hum is it a good day today ?</0><1>Wanna see if your city will let you deshydrated ?</1><2><0>Go for it</0></2>",
-    "birthday": "<0>Birth of the millennial</0><p>The guy from the picture started it's life in the beautiful country of Belgium on 20th march 1997.</p>",
-    "student": "<0>Student's life</0><1>He learned and developped its I.T. skills at EPHEC,<br/> in the city of Louvain-La-Neuve. <br/>He found that the thing he loved the most was coding in order to bring his imagination to life.<br/>Beginning with languages such as Javascript to the old man PHP.</1>",
-    "atm" : "<0>At the moment</0><1>He has learned from the past years to juggle with JS's frameworks such as React and Vue. <br/>He's available on any project that require design, front and back as a Freelancer, from the sketch to the last line of code ! <br/>So he's obviously looking after project to go on !</1><2>Looking to build a new project ?</2><3><0>Contact Me</0></3>",
+    "birthday": "<0>Birth of the millennial</0><p>I started my life in the beautiful country of Belgium on 20th march 1997.</p>",
+    "student": "<0>Student's life</0><1>I learned and developped my I.T. skills at EPHEC,<br/> in the city of Louvain-La-Neuve. <br/>I found that the thing I loved the most was coding in order to bring my imagination to life.<br/>Beginning with languages such as Javascript to the old man PHP.</1>",
+    "atm" : "<0>At the moment</0><1>I have learned from the past years to juggle with JS's frameworks such as React and Vue. <br/>I'm available on any project that require design | front | back as a Freelancer, from the sketch to the last line of code ! <br/>So i'm obviously looking after project to go on !</1><2>Looking to build a new project ?</2><3><0>Contact Me</0></3>",
     "title" : "<0>Professionnal and Educationnal Experiences</0>",
     "stage":"<0>Bachelor Computer Sciences at Ephec.<br/>From 2017 to 2021</0><1>Stage at IT-School  as fullstack php developper under symfony.<br/>February to may 2020.</1>",
     "wecodx" :"<0>Student fullstack developper at Wecodx.<br/>August  2021</0><1>Developping with PHP under symfony environment. <br/>Frontend was held by classic Javascript | Twig.</1>",
@@ -24,8 +24,8 @@
     "subject":"<0>Choose your subject</0><1><0>Please choose your Subject</0><1>Design</1><2>Price</2><3>Website</3><4>Domain</4><5>Hosting</5><6>Other</6></1>",
     "question": "<0>Ask your question below</0>",
     "submit" : "Submit",
-    "copyright" : "<p>@ 2022 MAXENCE SCORNICIEL All rights reserved</p>",
-    "footerLink" :"<0>HOME</0><1>ABOUT</1><2>EXPERIENCES</2><3>CONTACT ME</3>"
+    "copyright" : "<p>@ 2022 MAXENCE SCORNICIEL All rights reserved</p><1></1>",
+    "footerLink" :"<0>HOME</0><1>ABOUT</1><2>EXPERIENCES</2><3>CONTACT</3>"
 
 
 }

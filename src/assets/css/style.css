@@ -19,6 +19,9 @@ body {
   background-size: cover;
   background-image: url(../svg/background.svg);
   background-attachment: fixed;
+  overflow-x: hidden;
+  line-height: 1.4;
+  letter-spacing: 0.005em;
 }
 
 /*
@@ -133,20 +136,16 @@ body {
   border-top: black 2px solid;
 }
 
+.container .footer .socialNetwork {
+  margin: 1.5% 30% 0% 30%;
+}
+
+.container .footer .socialNetwork .socialNetworkIcon {
+  margin: 0.1em;
+  font-size: 40px;
+}
+
 .container .footer .siteName {
-  margin-top: 2rem;
-}
-
-.container .footer .footerLink {
-  margin-top: 2rem;
-}
-
-.container .footer .footerLink .navlink {
-  margin: 1rem;
-  font-size: 22px;
-}
-
-.container .footer .footerLink .navlink:visited {
-  color: #000000;
+  margin: 1.5% 30% 0% 30%;
 }
 /*# sourceMappingURL=style.css.map */

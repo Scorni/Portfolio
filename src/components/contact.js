@@ -36,14 +36,14 @@ export default function Arrow() {
                         <Trans i18nKey="name">
                             <label label for="name" className="nameLabel">Name</label>
                         </Trans>
-                        <input placeholder="John" type="text" name="name" className="nameInput" ></input>
+                        <input placeholder="John" type="text" name="name" className="nameInput" required></input>
                     </div>
                     <div className='firstName'>
                         <Trans i18nKey="firstName">
                             <label for="firstName" className="firstNameLabel">First Name</label>
 
                         </Trans>
-                        <input placeholder="Doe" type="text" name="firstName" className="firstNameInput" ></input> 
+                        <input placeholder="Doe" type="text" name="firstName" className="firstNameInput" required></input> 
                     </div>
                     <br/>
                     <div className="mail">
@@ -55,7 +55,7 @@ export default function Arrow() {
                     <div className="subject">
                         <Trans i18nKey="subject">
                             <label for="subject" className="subjectLabel">Choose your subject</label>
-                            <select className="subjectLabel" name="subjectLabel" id="pet-select" >
+                            <select className="subjectLabel" name="subjectLabel" id="pet-select" required>
                                 <option defaultValue="">Please choose your Subject</option>
                                 <option value="Design">Design</option>
                                 <option value="Price">Price</option>
@@ -70,7 +70,7 @@ export default function Arrow() {
                         <Trans i18nKey="question">
                             <label for="questionTextArea" className="questionLabel">Ask your question below</label>
                         </Trans>
-                        <textarea className="questionTextArea" name="questionTextArea"  placeholder="..."/>
+                        <textarea className="questionTextArea" name="questionTextArea"  placeholder="..." required/>
                     </div>
                     <div className="sendQuestion">
                         <label for="submitQuestion"></label>

@@ -17,7 +17,9 @@ body{
     background-size: cover;
     background-image: url(../svg/background.svg);
     background-attachment: fixed;
- 
+    overflow-x: hidden;
+    line-height: 1.4;
+    letter-spacing: 0.005em;
 }
 
 /*
@@ -103,19 +105,22 @@ body{
         font-family: 'Bebas Neue', cursive;
         background-color: white;
         border-top: rgb(0, 0, 0) 2px solid;
-        .siteName{
-            margin-top: 2rem;
-        }
-        .footerLink{
-            margin-top: 2rem;
+        
+        .socialNetwork{
+            margin: 1.5% 30% 0% 30%;
+            .socialNetworkIcon{
+                margin: 0.1em ;
+                font-size: 40px;
 
-            .navlink{
-                margin: 1rem;
-                font-size: 22px;
             }
-            .navlink:visited{
-                color: #000000;
-            }
+        }
+        .siteName{
+            // margin: 3.5%;
+            margin: 1.5% 30% 0% 30%;
+
+            // border-inline: #000000 1.5px solid;
+            
+
         }
     }
 }
