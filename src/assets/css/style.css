@@ -34,7 +34,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  border: 3px solid black;
+  border-inline: 3px solid black;
   background-color: #F5F5F5;
 }
 
@@ -147,7 +147,7 @@ body {
           justify-content: center;
   font-family: 'Bebas Neue', cursive;
   background-color: white;
-  border-top: black 2px solid;
+  border-top: black 3px solid;
 }
 
 .container .footer .socialNetwork {
