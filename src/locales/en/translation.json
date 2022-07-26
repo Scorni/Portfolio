@@ -23,8 +23,9 @@
     "email": "<0>Email</0>",
     "subject":"<0>Choose your subject</0><1><0>Please choose your Subject</0><1>Design</1><2>Price</2><3>Website</3><4>Domain</4><5>Hosting</5><6>Other</6></1>",
     "question": "<0>Ask your question below</0>",
-    "submit" : "Submit"
-
+    "submit" : "Submit",
+    "copyright" : "<p>@ 2022 MAXENCE SCORNICIEL All rights reserved</p>",
+    "footerLink" :"<0>HOME</0><1>ABOUT</1><2>EXPERIENCES</2><3>CONTACT ME</3>"
 
 
 }

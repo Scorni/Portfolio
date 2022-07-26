@@ -51,7 +51,7 @@ main .professionnal {
     -webkit-animation: slideLeft 1s forwards cubic-bezier(0.755, 0.05, 0.855, 0.06);
             animation: slideLeft 1s forwards cubic-bezier(0.755, 0.05, 0.855, 0.06);
     width: 50%;
-    border-block: black 2px solid;
+    border-top: black 2px solid;
     border-right: black 1px solid;
   }
 }
@@ -108,7 +108,7 @@ main .personnal {
             animation: slideRight 1s forwards cubic-bezier(0.755, 0.05, 0.855, 0.06);
     width: 50%;
     border-left: black 1px solid;
-    border-block: black 2px solid;
+    border-top: black 2px solid;
   }
 }
 

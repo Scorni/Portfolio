@@ -2,6 +2,7 @@ import './assets/css/style.css';
 import { Route, Routes } from "react-router-dom";
 
 import Header from "./components/header";
+import Footer from "./components/footer";
 import Homepage from "./components/homepage";
 import Experiences from "./components/experiences";
 import Contact from "./components/contact";
@@ -10,7 +11,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 
 function App() {
   return (
-    <div className="container parallax">
+    <div className="container">
       <Header />
       <ParallaxProvider>
         <Routes>
@@ -20,7 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </ParallaxProvider>
-      
+      <Footer />
     </div>
   );
 }

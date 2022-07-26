@@ -40,7 +40,7 @@ main{
             left: -45vw;
             animation: slideLeft 1s forwards cubic-bezier(0.755, 0.050, 0.855, 0.060);
             width: 50%;
-            border-block: black 2px solid;
+            border-top: black 2px solid;
             border-right: black 1px solid ;
         }
         @include devices(tablet) {
@@ -86,7 +86,7 @@ main{
             animation: slideRight 1s forwards cubic-bezier(0.755, 0.050, 0.855, 0.060);
             width: 50%;
             border-left: black 1px solid;
-            border-block: black 2px solid;
+            border-top: black 2px solid;
         }
         @include devices(tablet) {
             width: auto;

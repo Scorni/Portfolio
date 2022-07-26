@@ -95,4 +95,27 @@ body{
             
         }
     }
+    .footer{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Bebas Neue', cursive;
+        background-color: white;
+        border-top: rgb(0, 0, 0) 2px solid;
+        .siteName{
+            margin-top: 2rem;
+        }
+        .footerLink{
+            margin-top: 2rem;
+
+            .navlink{
+                margin: 1rem;
+                font-size: 22px;
+            }
+            .navlink:visited{
+                color: #000000;
+            }
+        }
+    }
 }
