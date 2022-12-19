@@ -1,6 +1,8 @@
 import '../assets/css/experiences/experiences.css';
 import previewWeather from "../assets/img/experiences/weatherApp.PNG"
 import previewQuizz from "../assets/img/experiences/quizzApp.PNG"
+import previewEsport from "../assets/img/experiences/esportStats.png"
+import previewSanta from "../assets/img/experiences/secretSanta.png"
 import ReactSVG from '../assets/svg/experiences/reactSVG'
 import VueSVG from '../assets/svg/experiences/vueSVG'
 import NodeSVG from '../assets/svg/experiences/nodeSVG'
@@ -109,20 +111,41 @@ export default function Experiences() {
                     <div>
                         <div className="sideProject">
                             <div className='firstRow'>
-                                <div className="quizz">
-                                    <a href='https://scorni-usbe-aters-quizz.vercel.app' target={'_blank'} rel="noreferrer">
-
-                                        <img className='quizzPreview' src={previewQuizz} alt="Nerd quizz game"></img>
-                                        <Trans i18nKey="quizz">
-                                            <h4>
-                                                Nerd quizz game
-                                            </h4>
-                                            
-                                            <p className='date'>
-                                                03/06/2022
-                                            </p>
+                                <div className="weather">
+                                    <a href='https://esports-stats.up.railway.app' target={'_blank'} rel="noreferrer">
+                                        <img className='weatherPreview' src={previewEsport} alt="Weather app"></img>
+                                        <Trans i18nKey="esport">
+                                            <h4></h4>
+                                            <p className='date'></p>
                                         </Trans>
                                     </a>
+                                </div>
+                                <div className="quizz">
+                                    <a href='https://noel2k22.netlify.app' target={'_blank'} rel="noreferrer">
+
+                                        <img className='quizzPreview' src={previewSanta} alt="Secret Santa"></img>
+                                        <Trans i18nKey="santa">
+                                            <h4></h4>
+                                            <p className='date'></p>
+                                        </Trans>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className='firstRow'>
+                                <div className="quizz">
+                                        <a href='https://scorni-usbe-aters-quizz.vercel.app' target={'_blank'} rel="noreferrer">
+
+                                            <img className='quizzPreview' src={previewQuizz} alt="Nerd quizz game"></img>
+                                            <Trans i18nKey="quizz">
+                                                <h4>
+                                                    Nerd quizz game
+                                                </h4>
+                                                
+                                                <p className='date'>
+                                                    03/06/2022
+                                                </p>
+                                            </Trans>
+                                        </a>
                                 </div>
                                 <div className="weather">
                                     <a href='https://scorni.github.io/Weather/' target={'_blank'} rel="noreferrer">
@@ -140,7 +163,6 @@ export default function Experiences() {
 
                                 </div>
                             </div>
-                            
                         </div>
                     </div>
                 </section>
