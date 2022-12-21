@@ -161,7 +161,7 @@ export default function Experiences() {
                             </div>
                             <div className='firstRow'>
                                 
-                                <div className="weather">
+                                {/* <div className="weather">
                                     <a href='https://scorni.github.io/Weather/' target={'_blank'} rel="noreferrer">
                                         <img className='weatherPreview' src={previewWeather} alt="Weather app"></img>
                                         <Trans i18nKey="weather">
@@ -175,7 +175,7 @@ export default function Experiences() {
                                         
                                     </a>
 
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

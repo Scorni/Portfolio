@@ -40,14 +40,14 @@ export default function homepage() {
               </Trans>
             </div> 
             <div className="first">
-              <p className="newsTitle">Quizz Game</p>
+              <p className="newsTitle">Esport Stats</p>
               <div className="contentNews">
-                <p>07/06/2022</p>
+                <p>31/11/2022</p>
                 <Trans i18nKey="firstNews">
-                  <p className="subTitleNews">what a game for nerd people !</p>
+                  <p className="subTitleNews">Let's check Fnatic results !</p>
                   <div>
-                    <p className='textNews'>Are you sure you know your tech's basics ?</p>
-                    <a href='https://scorni-usbe-aters-quizz.vercel.app' target={'_blank'} className="quizzLink" rel="noreferrer">
+                    <p className='textNews'>Wanna see some results from esport's competitions ?</p>
+                    <a href='https://esports-stats.up.railway.app' target={'_blank'} className="quizzLink" rel="noreferrer">
                         <h3>Click here</h3>
                     </a>
                   </div>
@@ -56,14 +56,14 @@ export default function homepage() {
               </div>
             </div>
             <div className="second">
-              <p className="newsTitle">Weather</p>
+              <p className="newsTitle">Les 1000 et 1 cartes</p>
               <div className="contentNews">
-                <p>07/06/2022</p>
+                <p>21/09/2022</p>
                 <Trans i18nKey="secondNews">
                   <p className="subTitleNews">Hum is it a good day today ?</p>
                   <p className='textNews'>Wanna see if your city will let you deshydrated ? 
                   </p>
-                  <a href='https://scorni.github.io/Weather/' target={'_blank'} className ="weatherLink" rel="noreferrer">
+                  <a href='https://1000-et-1-cartes.netlify.app' target={'_blank'} className ="weatherLink" rel="noreferrer">
                     <h3>Go for it</h3>
                   </a>
                 </Trans>
