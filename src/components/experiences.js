@@ -3,6 +3,7 @@ import previewWeather from "../assets/img/experiences/weatherApp.PNG"
 import previewQuizz from "../assets/img/experiences/quizzApp.PNG"
 import previewEsport from "../assets/img/experiences/esportStats.png"
 import previewSanta from "../assets/img/experiences/secretSanta.png"
+import preview1000 from "../assets/img/experiences/1000et1cartes.png"
 import ReactSVG from '../assets/svg/experiences/reactSVG'
 import VueSVG from '../assets/svg/experiences/vueSVG'
 import NodeSVG from '../assets/svg/experiences/nodeSVG'
@@ -110,7 +111,16 @@ export default function Experiences() {
                     </div>
                     <div>
                         <div className="sideProject">
-                            <div className='firstRow'>
+                        <div className='firstRow'>
+                                <div className="weather">
+                                    <a href='https://1000-et-1-cartes.netlify.app' target={'_blank'} rel="noreferrer">
+                                        <img className='weatherPreview' src={preview1000} alt="Weather app"></img>
+                                        <Trans i18nKey="1000">
+                                            <h4></h4>
+                                            <p className='date'></p>
+                                        </Trans>
+                                    </a>
+                                </div>
                                 <div className="weather">
                                     <a href='https://esports-stats.up.railway.app' target={'_blank'} rel="noreferrer">
                                         <img className='weatherPreview' src={previewEsport} alt="Weather app"></img>
@@ -120,6 +130,9 @@ export default function Experiences() {
                                         </Trans>
                                     </a>
                                 </div>
+                            </div>
+                            <div className='firstRow'>
+                                
                                 <div className="quizz">
                                     <a href='https://noel2k22.netlify.app' target={'_blank'} rel="noreferrer">
 
@@ -130,8 +143,6 @@ export default function Experiences() {
                                         </Trans>
                                     </a>
                                 </div>
-                            </div>
-                            <div className='firstRow'>
                                 <div className="quizz">
                                         <a href='https://scorni-usbe-aters-quizz.vercel.app' target={'_blank'} rel="noreferrer">
 
@@ -147,6 +158,9 @@ export default function Experiences() {
                                             </Trans>
                                         </a>
                                 </div>
+                            </div>
+                            <div className='firstRow'>
+                                
                                 <div className="weather">
                                     <a href='https://scorni.github.io/Weather/' target={'_blank'} rel="noreferrer">
                                         <img className='weatherPreview' src={previewWeather} alt="Weather app"></img>
