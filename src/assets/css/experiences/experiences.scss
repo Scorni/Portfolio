@@ -63,7 +63,7 @@ main{
             text-align: center;
             margin-inline: 15%;
         }
-        .stage,.wecodx,.uliege,.hrorganizer{
+        .stage,.wecodx,.uliege,.hrorganizer,.selfFormation{
             margin: 5%;
             background-color: #d4ffea;
             border: 1px solid black;
@@ -71,7 +71,7 @@ main{
             transition: 0.2s;
 
         }
-        .stage:hover,.wecodx:hover,.uliege:hover,.hrorganizer:hover{
+        .stage:hover,.wecodx:hover,.uliege:hover,.hrorganizer:hover,.selfFormation:hover{
             box-shadow: 5px 5px 0px rgb(0, 0, 0);
             transition: 0.2s;
         }

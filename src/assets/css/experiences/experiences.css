@@ -80,7 +80,7 @@ main .professionnal p {
   margin-inline: 15%;
 }
 
-main .professionnal .stage, main .professionnal .wecodx, main .professionnal .uliege, main .professionnal .hrorganizer {
+main .professionnal .stage, main .professionnal .wecodx, main .professionnal .uliege, main .professionnal .hrorganizer, main .professionnal .selfFormation {
   margin: 5%;
   background-color: #d4ffea;
   border: 1px solid black;
@@ -88,7 +88,7 @@ main .professionnal .stage, main .professionnal .wecodx, main .professionnal .ul
   transition: 0.2s;
 }
 
-main .professionnal .stage:hover, main .professionnal .wecodx:hover, main .professionnal .uliege:hover, main .professionnal .hrorganizer:hover {
+main .professionnal .stage:hover, main .professionnal .wecodx:hover, main .professionnal .uliege:hover, main .professionnal .hrorganizer:hover, main .professionnal .selfFormation:hover {
   -webkit-box-shadow: 5px 5px 0px black;
           box-shadow: 5px 5px 0px black;
   -webkit-transition: 0.2s;

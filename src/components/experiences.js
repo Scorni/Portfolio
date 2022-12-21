@@ -8,7 +8,6 @@ import ReactSVG from '../assets/svg/experiences/reactSVG'
 import VueSVG from '../assets/svg/experiences/vueSVG'
 import NodeSVG from '../assets/svg/experiences/nodeSVG'
 import FigmaSVG from '../assets/svg/experiences/figmaSVG'
-// import Computer from '../assets/svg/experiences/computer'
 import {  Trans } from "react-i18next";
 
 
@@ -55,6 +54,29 @@ export default function Experiences() {
                             </p>
                         </Trans>
                     </div>
+                    <div className="hrorganizer">
+                        <Trans i18nKey="hrorganizer">
+                            <h3>
+                                Backend PHP developper at HR Organizer.<br/> 
+                                Avril 2022 - Juin 2022
+                            </h3>
+                            <p>
+                                Learned it that experience that I really prefer Frontend
+                            </p>
+                        </Trans>
+                    </div>
+                    <div className="selfFormation">
+                        <Trans i18nKey="selfFormation">
+                            <h3>
+                                Formation sur divers aspects de la programmation.<br/> 
+                                Juin 2022 - Now
+                            </h3>
+                            <p>
+                                Learning a lot about front-end technologie such as react, sass, animations.
+                            </p>
+                        </Trans>
+                    </div>
+                    
                 </section>
                 <section className="personnal">
                     <Trans i18nKey="titleTwo">
