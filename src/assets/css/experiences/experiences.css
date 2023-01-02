@@ -88,6 +88,20 @@ main .professionnal .stage, main .professionnal .wecodx, main .professionnal .ul
   transition: 0.2s;
 }
 
+@media only screen and (max-width: 481px) {
+  main .professionnal .stage, main .professionnal .wecodx, main .professionnal .uliege, main .professionnal .hrorganizer, main .professionnal .selfFormation {
+    -webkit-box-shadow: 5px 5px 0px black;
+            box-shadow: 5px 5px 0px black;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main .professionnal .stage, main .professionnal .wecodx, main .professionnal .uliege, main .professionnal .hrorganizer, main .professionnal .selfFormation {
+    -webkit-box-shadow: 5px 5px 0px black;
+            box-shadow: 5px 5px 0px black;
+  }
+}
+
 main .professionnal .stage:hover, main .professionnal .wecodx:hover, main .professionnal .uliege:hover, main .professionnal .hrorganizer:hover, main .professionnal .selfFormation:hover {
   -webkit-box-shadow: 5px 5px 0px black;
           box-shadow: 5px 5px 0px black;
@@ -191,10 +205,38 @@ main .personnal .skills .first {
   transition: 0.2s;
 }
 
+@media only screen and (max-width: 481px) {
+  main .personnal .skills .first {
+    -webkit-box-shadow: 5px 5px 0px black;
+            box-shadow: 5px 5px 0px black;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main .personnal .skills .first {
+    -webkit-box-shadow: 5px 5px 0px black;
+            box-shadow: 5px 5px 0px black;
+  }
+}
+
 main .personnal .skills .second {
   border: #000 solid 1px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+@media only screen and (max-width: 481px) {
+  main .personnal .skills .second {
+    -webkit-box-shadow: 5px 5px 0px black;
+            box-shadow: 5px 5px 0px black;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main .personnal .skills .second {
+    -webkit-box-shadow: 5px 5px 0px black;
+            box-shadow: 5px 5px 0px black;
+  }
 }
 
 main .personnal .skills .react, main .personnal .skills .vue, main .personnal .skills .node, main .personnal .skills .figma {
@@ -306,6 +348,20 @@ main .personnal .quizz, main .personnal .weather {
   border: 1px solid black;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+@media only screen and (max-width: 481px) {
+  main .personnal .quizz, main .personnal .weather {
+    -webkit-box-shadow: 5px 5px 0px black;
+            box-shadow: 5px 5px 0px black;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  main .personnal .quizz, main .personnal .weather {
+    -webkit-box-shadow: 5px 5px 0px black;
+            box-shadow: 5px 5px 0px black;
+  }
 }
 
 main .personnal .quizz h4, main .personnal .weather h4 {

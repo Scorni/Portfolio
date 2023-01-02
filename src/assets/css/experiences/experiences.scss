@@ -69,7 +69,12 @@ main{
             border: 1px solid black;
             // box-shadow: 5px 5px 0px rgb(0, 0, 0);
             transition: 0.2s;
-
+            @include devices(mobile) {
+                box-shadow: 5px 5px 0px rgb(0, 0, 0);
+            }
+            @include devices(tablet) {
+                box-shadow: 5px 5px 0px rgb(0, 0, 0);
+            }
         }
         .stage:hover,.wecodx:hover,.uliege:hover,.hrorganizer:hover,.selfFormation:hover{
             box-shadow: 5px 5px 0px rgb(0, 0, 0);
@@ -134,12 +139,22 @@ main{
             .first{
                 border: #000 solid 1px;
                 transition: 0.2s;
-
+                @include devices(mobile) {
+                    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+                }
+                @include devices(tablet) {
+                    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+                }
             }
             .second{
                 border: #000 solid 1px;
                 transition: 0.2s;
-
+                @include devices(mobile) {
+                    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+                }
+                @include devices(tablet) {
+                    box-shadow: 5px 5px 0px rgb(0, 0, 0);
+                }
             }
             .react, .vue,.node, .figma{
                 
@@ -198,7 +213,12 @@ main{
             background-color: white;
             border: 1px solid black;
             transition: 0.2s;
-
+            @include devices(mobile) {
+                box-shadow: 5px 5px 0px rgb(0, 0, 0);
+            }
+            @include devices(tablet) {
+                box-shadow: 5px 5px 0px rgb(0, 0, 0);
+            }
             // box-shadow: 5px 5px 0px rgb(0, 0, 0);
             h4{
                 width: auto;
